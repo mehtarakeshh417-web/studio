@@ -3,7 +3,7 @@
  * @fileOverview A health assistant AI flow.
  *
  * - askHealthAssistant - A function that handles health-related questions.
- * - HealthAssistantInput - The input type for the askHealthAssistant function.
+ * - HealthAssistantInput - The input type for the askHealthassistant function.
  * - HealthAssistantOutput - The return type for the askHealthAssistant function.
  */
 
@@ -30,6 +30,7 @@ const prompt = ai.definePrompt({
   output: { schema: HealthAssistantOutputSchema },
   prompt: `You are a helpful and empathetic AI Health Assistant from Symbolic Care. 
   Your goal is to provide clear, general health information and advice in a supportive manner.
+  Use markdown for formatting your answer. For example, use headings, bullet points, and bold text to structure your response and make it easy to read.
   
   IMPORTANT: You must always include a disclaimer that you are not a medical professional and the user should consult a doctor for medical advice.
   

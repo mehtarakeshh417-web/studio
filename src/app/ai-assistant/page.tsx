@@ -20,7 +20,7 @@ export default function AiAssistantPage() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-home');
+  const heroImage = PlaceHolderImages.find((p) => p.id === 'ai-assistant-bg');
 
   const handleSend = async () => {
     if (input.trim() === '' || isLoading) return;
@@ -54,7 +54,7 @@ export default function AiAssistantPage() {
           alt="Background"
           fill
           className="object-cover z-0"
-          data-ai-hint="medical background"
+          data-ai-hint={heroImage.imageHint}
         />
       )}
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
