@@ -87,7 +87,7 @@
     {
       "id": "supported-living-intro",
       "description": "A person with a disability working on a laptop in a comfortable living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "empowerment accessible"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "respite-care-choose",
       "description": "A yellow flower representing warmth and care.",
-      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "care compassion"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "cqc-promise",
       "description": "A handshake between two professionals, symbolizing a partnership.",
-      "imageUrl": "https://images.unsplash.com/photo-1600880292210-f75bb6a17965?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600880292210-f75bb6a17965?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "partnership trust"
     },
     {
@@ -155,6 +155,30 @@
       "description": "A group of happy, diverse seniors enjoying an activity together.",
       "imageUrl": "https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGFkdWx0JTIwY2FyZXxlbnwwfHx8fDE3MjE5Mjc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy adult care"
+    },
+    {
+      "id": "trainings-hero",
+      "description": "A diverse group of professionals in a training session.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "professional training"
+    },
+    {
+      "id": "trainings-section-1",
+      "description": "Caregivers learning together in a bright room.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496773905-f5b17e76b254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "team learning"
+    },
+    {
+      "id": "trainings-section-2",
+      "description": "A person receiving a certificate of achievement.",
+      "imageUrl": "https://images.unsplash.com/photo-1571260899104-6a0fb892b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "achievement certificate"
+    },
+    {
+      "id": "oliver-mcgowan-logo",
+      "description": "The official logo for The Oliver McGowan Mandatory Training.",
+      "imageUrl": "https://i.supaimg.com/f8f9064a-e49e-4a6c-9a4f-557375a004f2.png",
+      "imageHint": "official logo"
     }
   ]
 }
