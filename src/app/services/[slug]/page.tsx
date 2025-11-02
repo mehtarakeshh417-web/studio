@@ -48,7 +48,7 @@ export default function ServicePage({ params }: ServicePageProps) {
   }
 
   if (params.slug === 'specialist-services') {
-    permanentRedirect('/services/specialist/dementia-care');
+    permanentRedirect('/services/specialist-services');
   }
   
   if (params.slug === 'other-services') {
