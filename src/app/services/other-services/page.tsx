@@ -1,0 +1,73 @@
+
+import { services } from '@/lib/data';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+    Users,
+    BedDouble,
+    HeartHandshake,
+    Brain,
+    Stethoscope,
+    Briefcase,
+    GraduationCap,
+    HandHelping,
+    ShoppingCart,
+    Sofa,
+    Building,
+    Moon,
+    Sparkles,
+    CheckCircle
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+
+const otherServicesList: { name: string; icon: LucideIcon }[] = [
+    { name: 'Support to Access the Community for Different Activities', icon: Users },
+    { name: '24-hour support', icon: HandHelping },
+    { name: 'Night Sleep', icon: BedDouble },
+    { name: 'Live in care', icon: HeartHandshake },
+    { name: 'Mental Health Support', icon: Stethoscope },
+    { name: 'Respite Care', icon: Briefcase },
+    { name: 'Dementia Support', icon: Brain },
+    { name: 'Learning Disability', icon: GraduationCap },
+    { name: 'End of Life care', icon: HeartHandshake },
+    { name: 'Personal care', icon: HandHelping },
+    { name: 'PA Support', icon: Users },
+    { name: 'Overnight Care', icon: Moon },
+    { name: 'Shopping', icon: ShoppingCart },
+    { name: 'Companionship', icon: Sofa },
+    { name: 'Sit in service', icon: Sofa },
+    { name: 'Hospital Escort', icon: Building },
+    { name: 'Night Awake', icon: Sparkles },
+    { name: 'Cleaning', icon: CheckCircle },
+];
+
+
+export default function OtherServicesPage() {
+    const service = services.find(s => s.slug === 'other-services');
+
+    if (!service) return null;
+
+    return (
+        <div className="container py-16">
+            <div className="max-w-4xl mx-auto text-center">
+                <h1 className="font-headline text-4xl font-bold">{service.title}</h1>
+                <p className="mt-4 text-lg text-muted-foreground">
+                    We offer a wide variety of services to meet your unique needs. Explore the types of support we can provide below.
+                </p>
+            </div>
+
+            <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {otherServicesList.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                        <Card key={item.name} className="flex items-center p-4 bg-card hover:bg-muted transition-colors">
+                            <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                                <Icon className="h-6 w-6 text-primary" />
+                            </div>
+                            <CardTitle className="text-base font-semibold text-card-foreground">{item.name}</CardTitle>
+                        </Card>
+                    );
+                })}
+            </div>
+        </div>
+    );
+}

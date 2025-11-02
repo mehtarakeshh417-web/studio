@@ -22,7 +22,8 @@ export async function generateStaticParams() {
       service.slug !== 'supported-living-services' &&
       service.slug !== 'respite-care' &&
       service.slug !== 'cqc-consultancy' &&
-      service.slug !== 'specialist-services'
+      service.slug !== 'specialist-services' &&
+      service.slug !== 'other-services'
     )
     .map((service) => ({
       slug: service.slug,
@@ -48,6 +49,10 @@ export default function ServicePage({ params }: ServicePageProps) {
 
   if (params.slug === 'specialist-services') {
     permanentRedirect('/services/specialist/dementia-care');
+  }
+  
+  if (params.slug === 'other-services') {
+    permanentRedirect('/services/other-services');
   }
 
   const service = services.find((s) => s.slug === params.slug);
