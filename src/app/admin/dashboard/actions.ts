@@ -12,6 +12,10 @@ export type Job = {
   description: string;
   location: string;
   type: 'Full-time' | 'Part-time' | 'Contract';
+  salary: string;
+  experienceLevel: 'Entry-Level' | 'Mid-Level' | 'Senior';
+  responsibilities: string;
+  skills: string;
 };
 
 export type Application = {
@@ -23,7 +27,13 @@ export type Application = {
   phone: string;
   cvPath: string;
   appliedAt: string;
+  rightToWork: 'Yes' | 'No';
+  dbsCheck: 'Yes' | 'No';
+  drivingLicense: 'Yes' | 'No';
+  noticePeriod: string;
+  coverLetter: string;
 };
+
 
 const jobsFilePath = path.join(process.cwd(), 'src', 'lib', 'jobs.json');
 const applicationsFilePath = path.join(process.cwd(), 'src', 'lib', 'applications.json');
@@ -82,6 +92,11 @@ const applicationSchema = z.object({
   phone: z.string().min(10, "Phone number seems too short"),
   jobId: z.string(),
   jobTitle: z.string(),
+  rightToWork: z.enum(['Yes', 'No']),
+  dbsCheck: z.enum(['Yes', 'No']),
+  drivingLicense: z.enum(['Yes', 'No']),
+  noticePeriod: z.string().min(1, "Notice period is required."),
+  coverLetter: z.string().min(20, "Please provide a brief cover letter."),
 });
 
 export async function submitApplication(formData: FormData): Promise<{ success: boolean; message: string }> {
@@ -89,7 +104,8 @@ export async function submitApplication(formData: FormData): Promise<{ success: 
   const cvFile = formData.get('cv') as File | null;
 
   if (!validatedFields.success) {
-    return { success: false, message: "Invalid form data." };
+    console.log(validatedFields.error.flatten().fieldErrors)
+    return { success: false, message: "Invalid form data. Please check all fields." };
   }
   
   if (!cvFile || cvFile.size === 0) {

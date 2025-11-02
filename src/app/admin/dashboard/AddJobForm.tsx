@@ -27,10 +27,15 @@ import type { Job } from './actions';
 
 const formSchema = z.object({
   title: z.string().min(5, 'Title must be at least 5 characters.'),
-  description: z.string().min(20, 'Description must be at least 20 characters.'),
   location: z.string().min(2, 'Location is required.'),
   type: z.enum(['Full-time', 'Part-time', 'Contract']),
+  salary: z.string().min(3, 'Salary is required.'),
+  experienceLevel: z.enum(['Entry-Level', 'Mid-Level', 'Senior']),
+  description: z.string().min(20, 'Description must be at least 20 characters.'),
+  responsibilities: z.string().min(20, 'Responsibilities must be at least 20 characters.'),
+  skills: z.string().min(10, 'Skills must be at least 10 characters.'),
 });
+
 
 type AddJobFormValues = z.infer<typeof formSchema>;
 
@@ -53,9 +58,13 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
     resolver: zodResolver(formSchema),
     defaultValues: {
       title: '',
-      description: '',
       location: '',
       type: 'Full-time',
+      salary: '',
+      experienceLevel: 'Entry-Level',
+      description: '',
+      responsibilities: '',
+      skills: '',
     },
   });
 
@@ -78,7 +87,7 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-card p-6 rounded-lg border">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 bg-card p-6 rounded-lg border">
         <FormField
           control={form.control}
           name="title"
@@ -105,24 +114,61 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
             </FormItem>
           )}
         />
+        <div className="grid grid-cols-2 gap-4">
+            <FormField
+            control={form.control}
+            name="type"
+            render={({ field }) => (
+                <FormItem>
+                <FormLabel>Job Type</FormLabel>
+                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                    <SelectTrigger>
+                        <SelectValue placeholder="Select a job type" />
+                    </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                    <SelectItem value="Full-time">Full-time</SelectItem>
+                    <SelectItem value="Part-time">Part-time</SelectItem>
+                    <SelectItem value="Contract">Contract</SelectItem>
+                    </SelectContent>
+                </Select>
+                <FormMessage />
+                </FormItem>
+            )}
+            />
+            <FormField
+            control={form.control}
+            name="experienceLevel"
+            render={({ field }) => (
+                <FormItem>
+                <FormLabel>Experience Level</FormLabel>
+                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                    <SelectTrigger>
+                        <SelectValue placeholder="Select experience level" />
+                    </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                    <SelectItem value="Entry-Level">Entry-Level</SelectItem>
+                    <SelectItem value="Mid-Level">Mid-Level</SelectItem>
+                    <SelectItem value="Senior">Senior</SelectItem>
+                    </SelectContent>
+                </Select>
+                <FormMessage />
+                </FormItem>
+            )}
+            />
+        </div>
         <FormField
           control={form.control}
-          name="type"
+          name="salary"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Job Type</FormLabel>
-               <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select a job type" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="Full-time">Full-time</SelectItem>
-                  <SelectItem value="Part-time">Part-time</SelectItem>
-                  <SelectItem value="Contract">Contract</SelectItem>
-                </SelectContent>
-              </Select>
+              <FormLabel>Salary</FormLabel>
+              <FormControl>
+                <Input placeholder="e.g., £30,000 per year" {...field} />
+              </FormControl>
               <FormMessage />
             </FormItem>
           )}
@@ -136,7 +182,41 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
               <FormControl>
                 <Textarea
                   placeholder="Describe the role, responsibilities, and requirements..."
-                  className="min-h-[150px]"
+                  className="min-h-[120px]"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+         <FormField
+          control={form.control}
+          name="responsibilities"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Key Responsibilities</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="List the key responsibilities of the role..."
+                  className="min-h-[120px]"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+         <FormField
+          control={form.control}
+          name="skills"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Required Skills</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="List the required skills, qualifications, or experience..."
+                  className="min-h-[100px]"
                   {...field}
                 />
               </FormControl>

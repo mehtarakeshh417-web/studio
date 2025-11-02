@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { MapPin, Briefcase, FileText, Info } from 'lucide-react';
+import { MapPin, Briefcase, FileText, Info, DollarSign, Award } from 'lucide-react';
 
 export default async function CareersPage() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'careers-hero');
@@ -52,21 +52,34 @@ export default async function CareersPage() {
           </div>
 
           {jobs.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="space-y-8">
               {jobs.map((job) => (
-                <Card key={job.id} className="flex flex-col">
-                  <CardHeader>
+                <Card key={job.id} className="flex flex-col md:flex-row">
+                  <CardHeader className="flex-grow">
                     <CardTitle className="font-headline text-2xl">{job.title}</CardTitle>
-                    <CardDescription className="flex items-center gap-4 pt-2">
+                    <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
                       <span className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {job.location}</span>
                       <span className="flex items-center gap-2"><Briefcase className="h-4 w-4" /> {job.type}</span>
+                      <span className="flex items-center gap-2"><DollarSign className="h-4 w-4" /> {job.salary}</span>
+                      <span className="flex items-center gap-2"><Award className="h-4 w-4" /> {job.experienceLevel}</span>
                     </CardDescription>
+                    <div className="pt-4 space-y-4 text-sm text-muted-foreground">
+                        <div>
+                            <h4 className="font-bold text-foreground">Description</h4>
+                            <p className="line-clamp-2">{job.description}</p>
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-foreground">Key Responsibilities</h4>
+                            <p className="line-clamp-2">{job.responsibilities}</p>
+                        </div>
+                         <div>
+                            <h4 className="font-bold text-foreground">Required Skills</h4>
+                            <p className="line-clamp-2">{job.skills}</p>
+                        </div>
+                    </div>
                   </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground line-clamp-4">{job.description}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <Button asChild className="w-full">
+                  <CardFooter className="p-6 items-center border-t md:border-t-0 md:border-l">
+                    <Button asChild className="w-full md:w-auto">
                        <Link href={`/careers/apply?jobId=${job.id}&jobTitle=${encodeURIComponent(job.title)}`}>
                         <FileText className="mr-2 h-4 w-4" /> Apply Now
                       </Link>
