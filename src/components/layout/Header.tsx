@@ -15,6 +15,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet";
 import { AccessibilityToolbar } from '@/components/shared/AccessibilityToolbar';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
