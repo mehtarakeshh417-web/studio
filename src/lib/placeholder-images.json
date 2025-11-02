@@ -22,7 +22,7 @@
       "id": "service-domiciliary-care",
       "description": "A friendly carer visiting a home.",
       "imageUrl": "https://images.unsplash.com/photo-1567249856122-a130195fdd08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxob21lJTIwdmlzaXR8ZW58MHx8fHwxNzYyMDg0OTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "home visit"
+      "imageHint": "home care"
     },
     {
       "id": "service-respite-care",
@@ -51,20 +51,32 @@
     {
       "id": "service-cqc-consultancy",
       "description": "A professional writing on a clipboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1758599543378-ba892b220c89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBjbGlwYm9hcmR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758599543378-ba892b220c89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBjbGlwYm9hcmR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "professional clipboard"
     },
     {
       "id": "service-medical-services",
       "description": "A doctor's bag on a table.",
-      "imageUrl": "https://images.unsplash.com/photo-1610566218600-5c535199f1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBiYWd8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610566218600-5c535199f1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBiYWd8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "doctor bag"
     },
     {
       "id": "service-other-services",
       "description": "A question mark made of colorful blocks.",
-      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "question mark"
+    },
+    {
+      "id": "domiciliary-care-section-1",
+      "description": "Caregiver helping an elderly person.",
+      "imageUrl": "https://images.unsplash.com/photo-1615462696310-09736533dbb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXJlZ2l2ZXIlMjBzdXBwb3J0fGVufDB8fHx8MTc2MjA5MDM0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caregiver support"
+    },
+    {
+      "id": "domiciliary-care-section-2",
+      "description": "Elderly person smiling in their home.",
+      "imageUrl": "https://images.unsplash.com/photo-1758686253896-e6c76b6f7aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMHNlbmlvcnxlbnwwfHx8fDE3NjIwOTAzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy senior"
     }
   ]
 }

@@ -1,9 +1,11 @@
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { services } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { permanentRedirect } from 'next/navigation';
 
 type ServicePageProps = {
   params: {
@@ -12,12 +14,18 @@ type ServicePageProps = {
 };
 
 export async function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-  }));
+  return services
+    .filter(service => service.slug !== 'domiciliary-care')
+    .map((service) => ({
+      slug: service.slug,
+    }));
 }
 
 export default function ServicePage({ params }: ServicePageProps) {
+  if (params.slug === 'domiciliary-care') {
+    permanentRedirect('/services/domiciliary-care');
+  }
+
   const service = services.find((s) => s.slug === params.slug);
 
   if (!service) {
