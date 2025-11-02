@@ -147,7 +147,7 @@ export default function CqcConsultancyPage() {
                             alt="Our promise to you"
                             width={600}
                             height={400}
-                            className="rounded-lg shadow-lg object-cover w-full h-auto"
+                            className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[3/2]"
                             data-ai-hint={promiseImage.imageHint}
                         />
                     )}

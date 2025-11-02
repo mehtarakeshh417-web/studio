@@ -106,7 +106,7 @@ export default function RespiteCarePage() {
                                             alt="Companion smiling"
                                             width={500}
                                             height={350}
-                                            className="rounded-lg shadow-lg object-cover w-full h-auto"
+                                            className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[10/7]"
                                             data-ai-hint={dutiesImage.imageHint}
                                         />
                                     )}
@@ -221,7 +221,7 @@ export default function RespiteCarePage() {
                             alt="A yellow flower symbolizing care"
                             width={500}
                             height={350}
-                            className="rounded-lg shadow-lg object-cover w-full h-auto"
+                            className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[10/7]"
                             data-ai-hint={whyChooseImage.imageHint}
                         />
                     )}
