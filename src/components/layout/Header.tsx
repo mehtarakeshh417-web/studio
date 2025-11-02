@@ -12,9 +12,12 @@ import { Button } from '@/components/ui/button';
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AccessibilityToolbar } from '@/components/shared/AccessibilityToolbar';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 export function Header() {
   const pathname = usePathname();
@@ -67,13 +70,20 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-full max-w-sm">
+                <SheetHeader>
+                   <SheetTitle>
+                      <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
+                   </SheetTitle>
+                </SheetHeader>
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b pb-6">
                     <Logo />
-                    <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                      <X className="h-6 w-6" />
-                      <span className="sr-only">Close menu</span>
-                    </Button>
+                    <SheetClose asChild>
+                       <Button variant="ghost" size="icon">
+                        <X className="h-6 w-6" />
+                        <span className="sr-only">Close menu</span>
+                      </Button>
+                    </SheetClose>
                   </div>
                   <nav className="flex flex-col space-y-4 py-6">
                     {navLinks.map((link) => (
