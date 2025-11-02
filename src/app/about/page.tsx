@@ -1,15 +1,23 @@
 
+'use client';
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ChevronsUpDown } from 'lucide-react';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { useState } from 'react';
 
 const heroImage = PlaceHolderImages.find(p => p.id === 'about-hero');
 const introImage = PlaceHolderImages.find(p => p.id === 'about-intro');
@@ -35,7 +43,25 @@ const whyChooseUs = [
     "Transparent, responsive, and inclusive care model"
 ];
 
+const drManpreetQualifications = [
+    "General Practitioner",
+    "MBBS, MRCGP, PgDip (Dermatology), MD (Anaesthesia)",
+    "Facilitator Trainer tier 2 - Oliver McGowan",
+    "Diploma in Leadership for health and social care and children and young people's services",
+    "Diploma (Advanced) in Challenging Behaviour"
+];
+
+const mrsMeetuQualifications = [
+    "Facilitator Trainer tier 2 - Oliver McGowan",
+    "Diploma in Leadership for health and social care and children and young people's services",
+    "Diploma (Advanced) in Challenging Behaviour"
+];
+
+
 export default function AboutPage() {
+  const [isDrOpen, setIsDrOpen] = useState(false);
+  const [isMrsOpen, setIsMrsOpen] = useState(false);
+
   return (
     <div>
       <section className="relative h-[50vh] min-h-[300px] w-full flex items-center justify-center text-center text-white">
@@ -87,46 +113,78 @@ export default function AboutPage() {
             <section className="text-center">
                 <h2 className="font-headline text-3xl font-bold">Our Leadership</h2>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <Card className="text-left">
-                        <CardHeader>
-                             {drManpreetImage && (
-                                <Image
-                                    src={drManpreetImage.imageUrl}
-                                    alt="Dr. Manpreet Singh"
-                                    width={120}
-                                    height={120}
-                                    className="rounded-full shadow-lg mx-auto mb-4 border-4 border-primary"
-                                    data-ai-hint={drManpreetImage.imageHint}
-                                />
-                            )}
-                            <CardTitle className="text-center font-headline text-2xl">Dr. Manpreet Singh</CardTitle>
-                            <p className="text-center text-muted-foreground font-semibold">Nominated Individual (CQC)</p>
-                        </CardHeader>
-                        <CardContent className="prose max-w-none text-muted-foreground">
-                           <h3 className="font-headline text-xl font-bold">Leadership Rooted in Healthcare</h3>
-                           <p>Our organisation is proudly led by Dr. Manpreet Singh, a practicing General Practitioner (GP) and our Nominated Individual under the Care Quality Commission (CQC). Dr. Singh brings clinical insight, safeguarding knowledge, and a proactive, person-centred approach to service governance — ensuring all care is safe, effective, and evidence-based.</p>
-                        </CardContent>
-                    </Card>
-                    <Card className="text-left">
-                        <CardHeader>
-                            {mrsMeetuImage && (
-                                <Image
-                                    src={mrsMeetuImage.imageUrl}
-                                    alt="Mrs. Meetu Madaan"
-                                    width={120}
-                                    height={120}
-                                    className="rounded-full shadow-lg mx-auto mb-4 border-4 border-primary"
-                                    data-ai-hint={mrsMeetuImage.imageHint}
-                                />
-                            )}
-                            <CardTitle className="text-center font-headline text-2xl">Mrs. Meetu Madaan</CardTitle>
-                             <p className="text-center text-muted-foreground font-semibold">Registered Manager</p>
-                        </CardHeader>
-                        <CardContent className="prose max-w-none text-muted-foreground">
-                           <h3 className="font-headline text-xl font-bold">Experienced & Empowering Management</h3>
-                           <p>Our Registered Manager, Mrs. Meetu Madaan, is a seasoned leader with a background in healthcare training and business development. Her experience in delivering regulated training across health and social care sectors ensures our team is well-equipped, highly trained, and continually improving. Her passion for quality care and empowerment lies at the heart of every decision we make.</p>
-                        </CardContent>
-                    </Card>
+                    <Collapsible asChild open={isDrOpen} onOpenChange={setIsDrOpen}>
+                        <Card className="text-left flex flex-col">
+                            <CardHeader>
+                                {drManpreetImage && (
+                                    <Image
+                                        src={drManpreetImage.imageUrl}
+                                        alt="Dr. Manpreet Singh"
+                                        width={120}
+                                        height={120}
+                                        className="rounded-full shadow-lg mx-auto mb-4 border-4 border-primary"
+                                        data-ai-hint={drManpreetImage.imageHint}
+                                    />
+                                )}
+                                <CardTitle className="text-center font-headline text-2xl">Dr. Manpreet Singh</CardTitle>
+                                <p className="text-center text-muted-foreground font-semibold">Nominated Individual (CQC)</p>
+                            </CardHeader>
+                            <CardContent className="prose max-w-none text-muted-foreground flex-grow">
+                                <h3 className="font-headline text-xl font-bold">Qualifications</h3>
+                                <ul className="text-sm">
+                                    {drManpreetQualifications.map((q, i) => <li key={i}>{q}</li>)}
+                                </ul>
+                                <CollapsibleContent className="mt-4 prose-p:mt-2">
+                                   <h3 className="font-headline text-xl font-bold">Leadership Rooted in Healthcare</h3>
+                                   <p>Our organisation is proudly led by Dr. Manpreet Singh, a practicing General Practitioner (GP) and our Nominated Individual under the Care Quality Commission (CQC). Dr. Singh brings clinical insight, safeguarding knowledge, and a proactive, person-centred approach to service governance — ensuring all care is safe, effective, and evidence-based.</p>
+                                </CollapsibleContent>
+                            </CardContent>
+                             <div className="p-6 pt-0 mt-auto">
+                                <CollapsibleTrigger asChild>
+                                    <Button variant="ghost" className="w-full">
+                                        {isDrOpen ? 'Read Less' : 'Read More'}
+                                        <ChevronsUpDown className="ml-2 h-4 w-4" />
+                                    </Button>
+                                </CollapsibleTrigger>
+                            </div>
+                        </Card>
+                    </Collapsible>
+                    <Collapsible asChild open={isMrsOpen} onOpenChange={setIsMrsOpen}>
+                         <Card className="text-left flex flex-col">
+                            <CardHeader>
+                                {mrsMeetuImage && (
+                                    <Image
+                                        src={mrsMeetuImage.imageUrl}
+                                        alt="Mrs. Meetu Madaan"
+                                        width={120}
+                                        height={120}
+                                        className="rounded-full shadow-lg mx-auto mb-4 border-4 border-primary"
+                                        data-ai-hint={mrsMeetuImage.imageHint}
+                                    />
+                                )}
+                                <CardTitle className="text-center font-headline text-2xl">Mrs. Meetu Madaan</CardTitle>
+                                 <p className="text-center text-muted-foreground font-semibold">Registered Manager</p>
+                            </CardHeader>
+                            <CardContent className="prose max-w-none text-muted-foreground flex-grow">
+                               <h3 className="font-headline text-xl font-bold">Qualifications</h3>
+                                <ul className="text-sm">
+                                    {mrsMeetuQualifications.map((q, i) => <li key={i}>{q}</li>)}
+                                </ul>
+                                <CollapsibleContent className="mt-4 prose-p:mt-2">
+                                   <h3 className="font-headline text-xl font-bold">Experienced & Empowering Management</h3>
+                                   <p>Our Registered Manager, Mrs. Meetu Madaan, is a seasoned leader with a background in healthcare training and business development. Her experience in delivering regulated training across health and social care sectors ensures our team is well-equipped, highly trained, and continually improving. Her passion for quality care and empowerment lies at the heart of every decision we make.</p>
+                                </CollapsibleContent>
+                            </CardContent>
+                             <div className="p-6 pt-0 mt-auto">
+                                <CollapsibleTrigger asChild>
+                                    <Button variant="ghost" className="w-full">
+                                        {isMrsOpen ? 'Read Less' : 'Read More'}
+                                        <ChevronsUpDown className="ml-2 h-4 w-4" />
+                                    </Button>
+                                </CollapsibleTrigger>
+                            </div>
+                        </Card>
+                    </Collapsible>
                 </div>
             </section>
 
