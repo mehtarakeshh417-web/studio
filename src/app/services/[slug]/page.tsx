@@ -15,7 +15,7 @@ type ServicePageProps = {
 
 export async function generateStaticParams() {
   return services
-    .filter(service => service.slug !== 'domiciliary-care')
+    .filter(service => service.slug !== 'domiciliary-care' && service.slug !== 'supported-living-services')
     .map((service) => ({
       slug: service.slug,
     }));
@@ -24,6 +24,10 @@ export async function generateStaticParams() {
 export default function ServicePage({ params }: ServicePageProps) {
   if (params.slug === 'domiciliary-care') {
     permanentRedirect('/services/domiciliary-care');
+  }
+
+  if (params.slug === 'supported-living-services') {
+    permanentRedirect('/services/supported-living-services');
   }
 
   const service = services.find((s) => s.slug === params.slug);
