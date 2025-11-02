@@ -2,9 +2,12 @@ import { pageData, supportResources } from "@/lib/data";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { icons } from "lucide-react";
 import Link from 'next/link';
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, AlertTriangle } from "lucide-react";
 
 export default function SupportPage() {
+  const mainResources = supportResources.filter(r => r.category !== 'Useful Emergency / Urgent Contacts');
+  const emergencyContacts = supportResources.find(r => r.category === 'Useful Emergency / Urgent Contacts');
+
   return (
     <div className="container py-16">
       <div className="prose lg:prose-xl max-w-4xl mx-auto text-center">
@@ -13,7 +16,7 @@ export default function SupportPage() {
       </div>
 
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {supportResources.map((category) => {
+        {mainResources.map((category) => {
             const LucideIcon = category.icon ? icons[category.icon as keyof typeof icons] : null;
             return (
                 <Card key={category.category} className="overflow-hidden flex flex-col">
@@ -49,6 +52,38 @@ export default function SupportPage() {
             )
         })}
       </div>
+
+      {emergencyContacts && (
+        <div className="mt-20">
+          <Card className="overflow-hidden bg-destructive/10 border-destructive">
+            <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-2xl font-headline text-destructive">
+                    <AlertTriangle className="h-7 w-7" />
+                    {emergencyContacts.category}
+                </CardTitle>
+            </CardHeader>
+            <CardContent className="p-0">
+                <ul className="divide-y divide-destructive/20 grid grid-cols-1 md:grid-cols-3">
+                    {emergencyContacts.links.map(link => (
+                        <li key={link.name} className="flex-grow">
+                            <Link 
+                                href={link.url}
+                                target={link.url.startsWith('tel:') ? '_blank' : undefined}
+                                className="block p-6 hover:bg-destructive/20 transition-colors h-full text-center"
+                            >
+                                
+                                <p className="font-bold text-xl text-destructive-foreground">{link.name}</p>
+                                <p className="text-destructive-foreground/80 mt-1">{link.description}</p>
+                                
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
     </div>
   );
 }
