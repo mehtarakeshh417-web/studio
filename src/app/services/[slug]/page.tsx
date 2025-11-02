@@ -62,20 +62,44 @@ export default function ServicePage({ params }: ServicePageProps) {
   }
 
   if (service.slug === 'live-in-care' || service.slug === 'medical-services') {
+    const image = PlaceHolderImages.find((p) => p.id === service.imageId);
     return (
-      <div className="container py-24 text-center">
-        <div className="max-w-md mx-auto bg-card p-8 rounded-lg shadow-sm border">
-          <Info className="h-12 w-12 text-primary mx-auto mb-4" />
-          <h1 className="font-headline text-3xl font-bold">{service.title}</h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Information coming soon.
-          </p>
-          <p className="mt-2 text-muted-foreground">
-            Please check back later or contact us for more details.
-          </p>
-          <Button asChild size="lg" className="mt-8">
-            <Link href="/contact">Contact Us</Link>
-          </Button>
+      <div>
+        <section className="relative h-[50vh] min-h-[300px] w-full flex items-center justify-center text-center text-white">
+          {image && (
+            <Image
+              src={image.imageUrl}
+              alt={service.title}
+              fill
+              priority
+              className="object-cover"
+              data-ai-hint={image.imageHint}
+            />
+          )}
+          <div className="absolute inset-0 bg-primary/80" />
+          <div className="relative z-10 max-w-4xl px-4">
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl font-headline text-primary-foreground">
+              {service.title}
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-primary-foreground/90">
+              {service.description}
+            </p>
+          </div>
+        </section>
+        <div className="container py-24 text-center">
+          <div className="max-w-md mx-auto bg-card p-8 rounded-lg shadow-sm border">
+            <Info className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h2 className="font-headline text-3xl font-bold">Information Coming Soon</h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              We are currently preparing this page.
+            </p>
+            <p className="mt-2 text-muted-foreground">
+              Please check back later or contact us for more details.
+            </p>
+            <Button asChild size="lg" className="mt-8">
+              <Link href="/contact">Contact Us</Link>
+            </Button>
+          </div>
         </div>
       </div>
     );
