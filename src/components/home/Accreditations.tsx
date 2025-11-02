@@ -40,7 +40,7 @@ export function Accreditations() {
               href={accreditation.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative h-[1.8rem] w-[3.6rem] hover:opacity-80 transition-opacity duration-300"
+              className="relative h-[3.6rem] w-[7.2rem] hover:opacity-80 transition-opacity duration-300"
             >
               <Image
                 src={accreditation.imageUrl}
