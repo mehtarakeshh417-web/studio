@@ -36,7 +36,7 @@ export function Header() {
         </div>
         
         <div className="flex items-center justify-end gap-4">
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
