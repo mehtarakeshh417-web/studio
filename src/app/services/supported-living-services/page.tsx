@@ -65,7 +65,7 @@ export default function SupportedLivingPage() {
                   alt="Empowering independence"
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-lg object-cover w-full h-auto"
+                  className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[3/2]"
                   data-ai-hint={introImage.imageHint}
                 />
               )}
@@ -111,7 +111,7 @@ export default function SupportedLivingPage() {
                   alt="Our Commitment"
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-lg object-cover w-full h-auto"
+                  className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[3/2]"
                   data-ai-hint={offerImage.imageHint}
                 />
               )}

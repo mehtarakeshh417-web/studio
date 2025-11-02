@@ -15,26 +15,26 @@
     {
       "id": "service-live-in-care",
       "description": "A doctor talking to an elderly patient in a comforting environment.",
-      "imageUrl": "https://images.unsplash.com/photo-1631217871099-88310a909a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc2MjAxNTQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "doctor patient"
+      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "service-domiciliary-care",
       "description": "A friendly caregiver assisting an elderly person at home.",
-      "imageUrl": "https://images.unsplash.com/photo-1602152563796-29267eb24c0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXJlZ2l2ZXIlMjBzZW5pb3J8ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "caregiver senior"
+      "imageUrl": "https://images.unsplash.com/photo-1610499092697-903b6033a2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "service-respite-care",
       "description": "An elderly person and a caregiver sharing a laugh in a garden.",
-      "imageUrl": "https://images.unsplash.com/photo-1679108797373-4f0b8253d9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZW5pb3IlMjBjb21wYW5pb258ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "senior companion"
+      "imageUrl": "https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "service-specialist-care",
       "description": "A healthcare professional checking on an elderly patient with care.",
-      "imageUrl": "https://images.unsplash.com/photo-1611764461465-09162da6465a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2MjAzNjU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "healthcare professional"
+      "imageUrl": "https://images.unsplash.com/photo-1612537785055-e226dae15987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "ai-assistant-bg",
@@ -45,38 +45,38 @@
     {
       "id": "service-supported-living",
       "description": "An elderly person enjoying their time in a comfortable and bright living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1647913097155-4859fb131dd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjBsaXZpbmd8ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "senior living"
+      "imageUrl": "https://images.unsplash.com/photo-1588117362355-3d854378737e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "service-cqc-consultancy",
       "description": "A group of healthcare professionals having a discussion.",
-      "imageUrl": "https://images.unsplash.com/photo-1758873272732-3521e1486ddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWxzJTIwbWVldGluZ3xlbnwwfHx8fDE3NjIxMDY1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professionals meeting"
+      "imageUrl": "https://images.unsplash.com/photo-1622253692010-33352da603e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "service-medical-services",
       "description": "A nurse checking the blood pressure of a smiling elderly man.",
-      "imageUrl": "https://images.unsplash.com/photo-1612537785055-e226dae15987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxudXJzZSUyMHBhdGllbnR8ZW58MHx8fHwxNzYyMDM2NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "nurse patient"
+      "imageUrl": "https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "service-other-services",
       "description": "A group of elderly people happily socializing in a care center.",
-      "imageUrl": "https://images.unsplash.com/photo-1682211609879-653d86d7863f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzZW5pb3JzJTIwc29jaWFsaXppbmd8ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "seniors socializing"
+      "imageUrl": "https://images.unsplash.com/photo-1596703539955-10a5a6714e39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "domiciliary-care-section-1",
       "description": "A carer and senior person chatting in a bright living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1686052401814-d0430982f8f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXJlZ2l2ZXIlMjBjb252ZXJzYXRpb258ZW58MHx8fHwxNzYyMTA0ODg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "caregiver conversation"
+      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWR1bHQlMjBjYXJlJTIwY2VudGVyfGVufDB8fHx8MTc2MjIxNTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "domiciliary-care-section-2",
       "description": "Elderly person smiling in their home.",
-      "imageUrl": "https://images.unsplash.com/photo-1606047916181-cd01fca464dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGFwcHklMjBzZW5pb3J8ZW58MHx8fHwxNzYyMDkwMzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy senior"
+      "imageUrl": "https://images.unsplash.com/photo-1611764461465-09162da6465a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8YWR1bHQlMjBjYXJlJTIwY2VudGVyfGVufDB8fHx8MTc2MjIxNTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "supported-living-hero",
@@ -87,14 +87,14 @@
     {
       "id": "supported-living-intro",
       "description": "A support worker assists an individual with daily tasks in a bright, modern kitchen.",
-      "imageUrl": "https://images.unsplash.com/photo-1569508926450-cd832544c4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhc3Npc3RlZCUyMGxpdmluZ3xlbnwwfHx8fDE3NjIxMDgwMDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1547082688-535d55b8a1ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhc3Npc3RlZCUyMGxpdmluZ3xlbnwwfHx8fDE3NjIyMjE1OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "assisted living"
     },
     {
       "id": "supported-living-offer",
       "description": "A group of diverse people chatting and laughing in a shared community space.",
-      "imageUrl": "https://images.unsplash.com/photo-1740065592719-052d3e5ec6fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBjb25uZWN0aW9ufGVufDB8fHx8MTc2MTk5NTU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community connection"
+      "imageUrl": "https://images.unsplash.com/photo-1620912189835-31804271d410?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8YWR1bHQlMjBjYXJlJTIwY2VudGVyfGVufDB8fHx8MTc2MjIxNTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "respite-care-hero",
@@ -105,14 +105,14 @@
     {
       "id": "respite-care-duties",
       "description": "A carer and senior person sharing a moment of companionship.",
-      "imageUrl": "https://images.unsplash.com/photo-1719178054136-902a0f20d88e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21wYW5pb25zaGlwJTIwc3VwcG9ydHxlbnwwfHx8fDE3NjIxMDgxMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "companionship support"
+      "imageUrl": "https://images.unsplash.com/photo-1621253453856-a403459c0379?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8YWR1bHQlMjBjYXJlJTIwY2VudGVyfGVufDB8fHx8MTc2MjIxNTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "respite-care-choose",
       "description": "A yellow flower representing warmth and care.",
-      "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDgxMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "care compassion"
+      "imageUrl": "https://images.unsplash.com/photo-1620912189835-31804271d410?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8YWR1bHQlMjBjYXJlJTIwY2VudGVyfGVufDB8fHx8MTc2MjIxNTM2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "cqc-hero",
@@ -123,8 +123,8 @@
     {
       "id": "cqc-promise",
       "description": "A handshake between two professionals, symbolizing a partnership.",
-      "imageUrl": "https://images.unsplash.com/photo-1673515336414-0db19994707f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwYXJ0bmVyc2hpcCUyMHRydXN0fGVufDB8fHx8MTc2MjEwODEyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "partnership trust"
+      "imageUrl": "https://images.unsplash.com/photo-1612537785055-e226dae15987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhZHVsdCUyMGNhcmUlMjBjZW50ZXJ8ZW58MHx8fHwxNzYyMjE1MzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adult care"
     },
     {
       "id": "about-hero",
