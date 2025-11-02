@@ -11,21 +11,21 @@ export function FloatingActionButtons() {
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Button asChild size="icon" className="rounded-full h-16 w-16 bg-purple-600 hover:bg-purple-700">
                 <Link href="/ai-assistant" aria-label="AI Assistant">
-                    <Bot className="h-8 w-8" />
+                    <Bot size={32} />
                 </Link>
             </Button>
         </motion.div>
          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Button asChild size="icon" className="rounded-full h-16 w-16 bg-green-500 hover:bg-green-600">
                 <Link href="https://wa.me/442012345678" target="_blank" aria-label="Chat on WhatsApp">
-                <MessageCircle className="h-8 w-8" />
+                <MessageCircle size={32} />
                 </Link>
             </Button>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Button asChild size="icon" className="rounded-full h-16 w-16">
                 <Link href="tel:02012345678" aria-label="Call Us">
-                <Phone className="h-8 w-8" />
+                <Phone size={32} />
                 </Link>
             </Button>
         </motion.div>
