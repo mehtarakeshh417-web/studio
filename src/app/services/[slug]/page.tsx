@@ -1,4 +1,5 @@
 
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { services } from '@/lib/data';
@@ -15,7 +16,11 @@ type ServicePageProps = {
 
 export async function generateStaticParams() {
   return services
-    .filter(service => service.slug !== 'domiciliary-care' && service.slug !== 'supported-living-services')
+    .filter(service => 
+      service.slug !== 'domiciliary-care' && 
+      service.slug !== 'supported-living-services' &&
+      service.slug !== 'respite-care'
+    )
     .map((service) => ({
       slug: service.slug,
     }));
@@ -28,6 +33,10 @@ export default function ServicePage({ params }: ServicePageProps) {
 
   if (params.slug === 'supported-living-services') {
     permanentRedirect('/services/supported-living-services');
+  }
+  
+  if (params.slug === 'respite-care') {
+    permanentRedirect('/services/respite-care');
   }
 
   const service = services.find((s) => s.slug === params.slug);

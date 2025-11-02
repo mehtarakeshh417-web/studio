@@ -39,13 +39,13 @@
     {
       "id": "ai-assistant-bg",
       "description": "Abstract medical background with soft colors.",
-      "imageUrl": "https://images.unsplash.com/photo-1579684385127-6c17937c1275?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoZWFsdGglMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MjA4Njc3M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579684385127-6c17937c1275?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoZWFsdGglMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MjA4Njc3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "health technology"
     },
     {
       "id": "service-supported-living",
       "description": "A modern and accessible apartment building.",
-      "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern apartment"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "domiciliary-care-section-2",
       "description": "Elderly person smiling in their home.",
-      "imageUrl": "https://images.unsplash.com/photo-1758686253896-e6c76b6f7aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMHNlbmlvcnxlbnwwfHx8fDE3NjIwOTAzMzl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758686253896-e6c76b6f7aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMHNlbmlvcnxlbnwwfHx8fDE3NjIwOTAzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy senior"
     },
     {
@@ -95,6 +95,24 @@
       "description": "A group of diverse people chatting and laughing in a shared community space.",
       "imageUrl": "https://images.unsplash.com/photo-1666285764673-3269d284b1eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21tdW5pdHklMjBjb25uZWN0aW9ufGVufDB8fHx8MTc2MTk5NTU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "community connection"
+    },
+    {
+      "id": "respite-care-hero",
+      "description": "A calm and peaceful room with a comfortable chair.",
+      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZWFjZSUyMG9mJTIwbWluZHxlbnwwfHx8fDE3NjIxMDY1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peace mind"
+    },
+    {
+      "id": "respite-care-duties",
+      "description": "A carer and senior person sharing a moment of companionship.",
+      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW5pb25zaGlwfGVufDB8fHx8MTc2MjEwNjY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "companionship support"
+    },
+    {
+      "id": "respite-care-choose",
+      "description": "A yellow flower representing warmth and care.",
+      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "care compassion"
     }
   ]
 }
