@@ -21,7 +21,7 @@ export function Logo() {
         width={480}
         height={100}
         priority
-        className="h-20 w-auto"
+        className="h-24 w-auto"
         data-ai-hint={logoImage.imageHint}
       />
     </Link>
