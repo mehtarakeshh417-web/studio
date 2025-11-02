@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Service } from '@/lib/data';
@@ -13,14 +15,17 @@ import {
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+import { icons } from 'lucide-react';
 
 type ServiceCardProps = {
   service: Service;
 };
 
 export function ServiceCard({ service }: ServiceCardProps) {
-  const { title, description, slug, icon: Icon, imageId } = service;
+  const { title, description, slug, icon, imageId } = service;
   const image = PlaceHolderImages.find(p => p.id === imageId);
+  const LucideIcon = icon ? icons[icon] : null;
 
   return (
     <motion.div
@@ -41,9 +46,11 @@ export function ServiceCard({ service }: ServiceCardProps) {
           </div>
         )}
         <CardHeader className="flex-row items-start gap-4">
-          <div className="bg-primary/10 text-primary p-3 rounded-lg">
-              <Icon className="h-6 w-6" />
-          </div>
+          {LucideIcon && (
+            <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                <LucideIcon className="h-6 w-6" />
+            </div>
+          )}
           <div>
               <CardTitle className="font-headline text-xl">{title}</CardTitle>
           </div>

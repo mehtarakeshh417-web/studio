@@ -1,4 +1,4 @@
-import type { LucideIcon } from 'lucide-react';
+import type { LucideIcon, LucideProps } from 'lucide-react';
 import {
   HeartHandshake,
   Home,
@@ -10,8 +10,21 @@ import {
   UserCheck,
   Facebook,
   Twitter,
-  Linkedin
+  Linkedin,
+  type Icon as LucideIconType,
 } from 'lucide-react';
+import dynamic from 'next/dynamic';
+
+const Icons = {
+  HeartHandshake,
+  Home,
+  Users,
+  Stethoscope,
+  Clock,
+  BrainCircuit,
+  Smile,
+  UserCheck
+}
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -29,7 +42,7 @@ export type Service = {
   slug: string;
   description: string;
   longDescription: string;
-  icon: LucideIcon;
+  icon: keyof typeof Icons;
   imageId: string;
 };
 
@@ -39,7 +52,7 @@ export const services: Service[] = [
     slug: 'live-in-care',
     description: 'Continuous care and support in the comfort of your own home.',
     longDescription: 'Our Live-in Care service provides round-the-clock support from a dedicated carer who lives with you in your home. This ensures continuous companionship and assistance, promoting independence and peace of mind for you and your loved ones. We tailor our care plans to your specific needs, routines, and preferences.',
-    icon: Home,
+    icon: 'Home',
     imageId: 'service-live-in-care',
   },
   {
@@ -47,7 +60,7 @@ export const services: Service[] = [
     slug: 'domiciliary-care',
     description: 'Flexible care visits to support your independent living at home.',
     longDescription: 'Domiciliary Care, also known as home care, involves our carers visiting you at home to help with a wide range of tasks. From personal care and medication reminders to meal preparation and light housekeeping, we provide the support you need to live comfortably and independently in your own surroundings.',
-    icon: Users,
+    icon: 'Users',
     imageId: 'service-domiciliary-care',
   },
   {
@@ -55,7 +68,7 @@ export const services: Service[] = [
     slug: 'respite-care',
     description: 'Short-term care to give regular carers a well-deserved break.',
     longDescription: 'Our Respite Care service offers temporary support, allowing primary carers to take a break, rest, and recharge. Whether it\'s for a few hours, a few days, or longer, we provide professional and compassionate care, ensuring your loved one is in safe hands while you take time for yourself.',
-    icon: Clock,
+    icon: 'Clock',
     imageId: 'service-respite-care',
   },
   {
@@ -63,7 +76,7 @@ export const services: Service[] = [
     slug: 'palliative-care',
     description: 'Compassionate support to improve quality of life for individuals.',
     longDescription: 'Palliative care focuses on providing relief from the symptoms and stress of a serious illness. Our goal is to improve quality of life for both the patient and the family. Our multidisciplinary team works with you to provide medical, emotional, and spiritual support tailored to your needs.',
-    icon: HeartHandshake,
+    icon: 'HeartHandshake',
     imageId: 'service-palliative-care',
   },
   {
@@ -71,7 +84,7 @@ export const services: Service[] = [
     slug: 'dementia-care',
     description: 'Specialised care for individuals living with dementia.',
     longDescription: 'We provide specialised care for individuals living with dementia, focusing on creating a safe, familiar, and calming environment. Our carers are trained to understand the challenges of dementia and offer patient, compassionate support that promotes dignity, reduces anxiety, and enhances quality of life.',
-    icon: BrainCircuit,
+    icon: 'BrainCircuit',
     imageId: 'service-dementia-care',
   },
   {
@@ -79,7 +92,7 @@ export const services: Service[] = [
     slug: 'companionship-care',
     description: 'Friendly company and support with daily activities and hobbies.',
     longDescription: 'Loneliness can have a significant impact on well-being. Our companionship service provides a friendly face and a helping hand, whether it\'s for a chat over a cup of tea, a walk in the park, or assistance with hobbies and social outings. We match our carers to your interests and personality.',
-    icon: Smile,
+    icon: 'Smile',
     imageId: 'service-companionship-care',
   },
   {
@@ -87,7 +100,7 @@ export const services: Service[] = [
     slug: 'personal-care',
     description: 'Dignified assistance with personal routines like bathing and dressing.',
     longDescription: 'Our Personal Care service offers sensitive and respectful assistance with daily personal routines such as bathing, dressing, grooming, and toileting. We prioritise your dignity and comfort, empowering you to maintain your personal hygiene and appearance with confidence.',
-    icon: UserCheck,
+    icon: 'UserCheck',
     imageId: 'service-personal-care',
   },
   {
@@ -95,7 +108,7 @@ export const services: Service[] = [
     slug: 'specialist-care',
     description: 'Expert care for complex conditions, led by healthcare professionals.',
     longDescription: 'For individuals with complex health needs, our Specialist Care service provides expert support managed by qualified healthcare professionals. We cover a range of conditions, ensuring that you receive clinical expertise and personalised care in the comfort of your own home.',
-    icon: Stethoscope,
+    icon: 'Stethoscope',
     imageId: 'service-specialist-care',
   },
 ];
