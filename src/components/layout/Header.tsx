@@ -28,7 +28,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center justify-between">
-        <Logo />
+        <div className="flex items-center gap-4">
+          <Logo />
+           <div className="hidden md:block">
+             {isClient && <AccessibilityToolbar />}
+           </div>
+        </div>
         
         <div className="flex items-center justify-end gap-4">
           <nav className="hidden md:flex items-center space-x-6">
@@ -47,10 +52,9 @@ export function Header() {
           </nav>
           
           <div className="hidden md:flex items-center gap-4">
-              <Button asChild variant="outline">
+              <Button asChild>
                 <Link href="/admin/login">Admin</Link>
               </Button>
-              {isClient && <AccessibilityToolbar />}
           </div>
 
           <div className="flex items-center gap-4 md:hidden">
