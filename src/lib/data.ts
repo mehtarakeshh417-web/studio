@@ -61,7 +61,7 @@ export const services: Service[] = [
   },
   {
     title: 'Specialist Services',
-    slug: 'specialist-care',
+    slug: 'specialist-services',
     description: 'Expert care for complex conditions, led by healthcare professionals.',
     longDescription: 'For individuals with complex health needs, our Specialist Care service provides expert support managed by qualified healthcare professionals. We cover a range of conditions, ensuring that you receive clinical expertise and personalised care in the comfort of your own home.',
     icon: 'Stethoscope',
@@ -93,6 +93,33 @@ export const services: Service[] = [
   },
 ];
 
+export const specialistServices = [
+  {
+    title: 'Dementia Care',
+    slug: 'dementia-care',
+  },
+  {
+    title: 'Learning Disability and Autism',
+    slug: 'learning-disability-and-autism',
+  },
+  {
+    title: 'End of Life Care',
+    slug: 'end-of-life-care',
+  },
+  {
+    title: 'Sensory Disabilities',
+    slug: 'sensory-disabilities',
+  },
+  {
+    title: 'Mental Health',
+    slug: 'mental-health',
+  },
+  {
+    title: 'Physical Disability',
+    slug: 'physical-disability',
+  },
+];
+
 export const pageData = {
     about: {
         title: "About Symbolic Care",
@@ -115,10 +142,93 @@ export const pageData = {
         content: "Are you a compassionate and dedicated individual looking to make a real difference? Symbolic Care offers rewarding career opportunities in the care sector. We are looking for people who share our values of empathy, respect, and professionalism. Join our team and become part of a supportive organization that values its employees and provides pathways for growth and development."
     },
     support: {
-        title: "Support for You",
-        content: "Navigating the world of care can be challenging. Our dedicated support team is here to help you every step of the way. Whether you have questions about funding, need advice on the right type of care, or simply want to talk through your options, we offer a friendly, no-obligation consultation. We also provide ongoing support to our clients and their families to ensure a smooth and positive care experience."
+        title: "Support & Resources",
+        content: "Navigating the world of care can be challenging. We've compiled a list of trusted UK-based organizations and resources to provide additional support, information, and guidance for you and your family."
     }
 };
+
+export const supportResources = [
+  {
+    category: 'Dementia Care',
+    icon: 'Brain',
+    links: [
+      { name: 'Alzheimer’s Society', url: 'https://www.alzheimers.org.uk/', description: 'Support, advice, and local services' },
+      { name: 'Age UK – Dementia Support', url: 'https://www.ageuk.org.uk/information-advice/health-wellbeing/conditions-illnesses/dementia/', description: 'Information and practical help for families' },
+      { name: 'NHS Dementia Care Guide', url: 'https://www.nhs.uk/conditions/dementia/care-and-support/', description: 'Symptoms, diagnosis, and treatment' },
+    ]
+  },
+  {
+    category: 'Learning Disability and Autism',
+    icon: 'Users',
+    links: [
+      { name: 'Mencap', url: 'https://www.mencap.org.uk/', description: 'Support, advocacy, and learning resources' },
+      { name: 'National Autistic Society', url: 'https://www.autism.org.uk/', description: 'Autism learning resources and services' },
+      { name: 'British Institute of Learning Disabilities (BILD)', url: 'https://www.bild.org.uk/', description: 'Positive Behaviour Support and training' },
+      { name: 'Foundation for People with Learning Disabilities', url: 'https://www.learningdisabilities.org.uk/', description: 'Research and good practice' },
+      { name: 'The Challenging Behaviour Foundation', url: 'https://www.challengingbehaviour.org.uk/', description: 'Family and PBS support' },
+      { name: 'Contact', url: 'https://contact.org.uk/', description: 'Support for families with disabled children' },
+    ]
+  },
+  {
+    category: 'End of Life Care',
+    icon: 'HeartHandshake',
+    links: [
+      { name: 'Marie Curie', url: 'https://www.mariecurie.org.uk/', description: 'End of life nursing and support' },
+      { name: 'Hospice UK', url: 'https://www.hospiceuk.org/', description: 'Hospice care and guidance' },
+      { name: 'NHS End of Life Care', url: 'https://www.nhs.uk/conditions/end-of-life-care/', description: 'NHS guide to services and planning' },
+    ]
+  },
+  {
+    category: 'Sensory Disabilities',
+    icon: 'Eye',
+    links: [
+      { name: 'Royal National Institute of Blind People (RNIB)', url: 'https://www.rnib.org.uk/', description: 'Support for visual impairment' },
+      { name: 'Royal National Institute for Deaf People (RNID)', url: 'https://rnid.org.uk/', description: 'Support for hearing loss and deafness' },
+      { name: 'Sense', url: 'https://www.sense.org.uk/', description: 'Support for people with complex disabilities and sensory loss' },
+    ]
+  },
+  {
+    category: 'Mental Health',
+    icon: 'Smile',
+    links: [
+      { name: 'NHS Every Mind Matters', url: 'https://www.nhs.uk/every-mind-matters/', description: 'NHS self-help tools and guidance' },
+      { name: 'Mind', url: 'https://www.mind.org.uk/', description: 'Mental health support and helplines' },
+      { name: 'Rethink Mental Illness', url: 'https://www.rethink.org/', description: 'Advocacy, support, and advice' },
+      { name: 'Samaritans', url: 'https://www.samaritans.org/', description: '24/7 emotional support helpline' },
+      { name: 'Shout', url: 'https://giveusashout.org/', description: '24/7 text support in mental health crisis' },
+      { name: 'Mental Health Foundation', url: 'https://www.mentalhealth.org.uk/', description: 'Training materials, campaigns, and research' },
+    ]
+  },
+  {
+    category: 'Physical Disability',
+    icon: 'Accessibility',
+    links: [
+      { name: 'Scope', url: 'https://www.scope.org.uk/', description: 'Support for people with disabilities' },
+      { name: 'Leonard Cheshire', url: 'https://www.leonardcheshire.org/', description: 'Disability support and care services' },
+      { name: 'Disability Rights UK', url: 'https://www.disabilityrightsuk.org/', description: 'Advice and advocacy' },
+    ]
+  },
+  {
+    category: 'Government and Training Guidance',
+    icon: 'BookOpen',
+    links: [
+      { name: 'NHS Health Education England – e-Learning for Health', url: 'https://www.e-lfh.org.uk/', description: 'Free online NHS training' },
+      { name: 'Skills for Care', url: 'https://www.skillsforcare.org.uk/', description: 'Workforce development, Care Certificate, LD & Autism frameworks' },
+      { name: 'CQC Guidance and Regulations', url: 'https://www.cqc.org.uk/', description: 'Care Quality Commission framework and regulations' },
+      { name: 'Lasting Power of Attorney – Gov.UK', url: 'https://www.gov.uk/power-of-attorney', description: 'Official government information & application' },
+    ]
+  },
+  {
+    category: 'Useful Emergency / Urgent Contacts',
+    icon: 'PhoneIncoming',
+    links: [
+      { name: 'Emergency', url: 'tel:999', description: 'Call 999' },
+      { name: 'NHS 111', url: 'tel:111', description: 'For non-emergency medical advice' },
+      { name: 'Samaritans', url: 'tel:116123', description: 'Call 116 123 – 24/7 free helpline' },
+    ]
+  },
+];
+
 
 export const socialLinks = [
     { name: 'Facebook', href: '#', icon: Facebook },
