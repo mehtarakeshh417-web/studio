@@ -49,7 +49,7 @@ export function Footer() {
             <div className="mt-4 space-y-2 text-sm">
               <p>123 Care Street, London, UK</p>
               <p>Email: contact@symboliccare.co.uk</p>
-              <p>Phone: 020 1234 5678</p>
+              <p>Phone: <span className="font-bold text-primary-foreground">020 1234 5678</span></p>
             </div>
           </div>
         </div>

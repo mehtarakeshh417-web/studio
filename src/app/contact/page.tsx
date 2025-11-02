@@ -49,7 +49,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Call Us</h3>
-                        <p className="text-muted-foreground">020 1234 5678</p>
+                        <p className="font-bold text-primary">020 1234 5678</p>
                     </div>
                 </div>
             </div>
@@ -77,8 +77,8 @@ export default function ContactPage() {
                                   target={link.url.startsWith('tel:') ? '_blank' : undefined}
                                   className="block p-6 hover:bg-primary/20 transition-colors h-full text-center"
                               >
-                                  <p className="font-bold text-xl text-primary-foreground">{link.name}</p>
-                                  <p className="text-primary-foreground/90 mt-1">{link.description}</p>
+                                  <p className="font-bold text-xl text-primary">{link.name}</p>
+                                  <p className="text-primary/90 mt-1">{link.description}</p>
                               </Link>
                           </li>
                       ))}
