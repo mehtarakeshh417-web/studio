@@ -57,7 +57,7 @@
     {
       "id": "service-medical-services",
       "description": "A doctor's bag on a table.",
-      "imageUrl": "https://images.unsplash.com/photo-1610566218600-5c535199f1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBiYWd8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610566218600-5c535199f1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBiYWd8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "doctor bag"
     },
     {
@@ -81,13 +81,13 @@
     {
       "id": "supported-living-hero",
       "description": "Person smiling and living independently in their modern apartment.",
-      "imageUrl": "https://images.unsplash.com/photo-1758874573188-5d7380fa647a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmRlcGVuZGVudCUyMGxpdmluZ3xlbnwwfHx8fDE3NjIwOTA4MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758874573188-5d7380fa647a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmRlcGVuZGVudCUyMGxpdmluZ3xlbnwwfHx8fDE3NjIwOTA4MjN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "independent living"
     },
     {
       "id": "supported-living-intro",
       "description": "A person with a disability working on a laptop in a comfortable living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "empowerment accessible"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "respite-care-hero",
       "description": "A calm and peaceful room with a comfortable chair.",
-      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZWFjZSUyMG9mJTIwbWluZHxlbnwwfHx8fDE3NjIxMDY1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZWFjZSUyMG9mJTIwbWluZHxlbnwwfHx8fDE3NjIxMDY1MzJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "peace mind"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "respite-care-choose",
       "description": "A yellow flower representing warmth and care.",
-      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "care compassion"
     },
     {
@@ -149,6 +149,12 @@
       "description": "Profile picture of Mrs. Meetu Madaan",
       "imageUrl": "https://i.supaimg.com/f1443ae7-031d-48f3-aab6-c418caccb3db.jpg",
       "imageHint": "profile portrait"
+    },
+    {
+      "id": "why-choose-us-hero",
+      "description": "A compassionate caregiver smiling warmly.",
+      "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXJlZ2l2ZXJ8ZW58MHx8fHwxNzYyMTI3MDk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caregiver smile"
     }
   ]
 }

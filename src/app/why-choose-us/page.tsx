@@ -1,6 +1,10 @@
 
 import { CheckCircle, Heart, Award, CalendarClock, TrendingUp, ShieldCheck, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+const heroImage = PlaceHolderImages.find(p => p.id === 'why-choose-us-hero');
 
 const reasons: { title: string; description: string; icon: LucideIcon }[] = [
     {
@@ -38,9 +42,31 @@ const reasons: { title: string; description: string; icon: LucideIcon }[] = [
 export default function WhyChooseUsPage() {
   return (
     <div className="bg-background">
+        <section className="relative h-[50vh] min-h-[300px] w-full flex items-center justify-center text-center text-white">
+            {heroImage && (
+            <Image
+                src={heroImage.imageUrl}
+                alt="A compassionate caregiver"
+                fill
+                priority
+                className="object-cover"
+                data-ai-hint={heroImage.imageHint}
+            />
+            )}
+            <div className="absolute inset-0 bg-primary/80" />
+            <div className="relative z-10 max-w-4xl px-4">
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl font-headline text-primary-foreground">
+                Why Choose Symbolic Care
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-primary-foreground/90">
+                Your trust is our highest priority. Discover the difference our compassionate care makes.
+            </p>
+            </div>
+        </section>
+
         <div className="container py-16 sm:py-24">
             <div className="max-w-4xl mx-auto text-center">
-                <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">Why Choose Us</h1>
+                <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">Your Partner in Exceptional Care</h2>
                 <p className="mt-6 text-lg text-muted-foreground">
                     At Symbolic Care, we believe in delivering exceptional, person-centered care that makes a real difference. Choosing us means entrusting your care to a dedicated team who prioritize dignity, respect, and independence.
                 </p>
