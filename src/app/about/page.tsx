@@ -1,17 +1,191 @@
-import { pageData } from "@/lib/data";
+
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { CheckCircle } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+const heroImage = PlaceHolderImages.find(p => p.id === 'about-hero');
+const introImage = PlaceHolderImages.find(p => p.id === 'about-intro');
+const drManpreetImage = PlaceHolderImages.find(p => p.id === 'dr-manpreet');
+const mrsMeetuImage = PlaceHolderImages.find(p => p.id === 'mrs-meetu');
+
+const ourServices = [
+    "Supported Living Services – tailored for individuals who value their independence but need structured, compassionate support to thrive.",
+    "Domiciliary (Home) Care Services – for those who prefer the comfort of care delivered at home, with personalised plans that promote autonomy, safety, and well-being."
+];
+
+const ourMission = [
+    "Safe, Effective, and Personalised",
+    "Delivered by skilled, trained, and compassionate staff",
+    "Backed by clinical oversight, ongoing supervision, and strong governance"
+];
+
+const whyChooseUs = [
+    "Regulated and CQC-compliant",
+    "Clinical governance under a qualified GP",
+    "Continuous staff training and development",
+    "Focus on well-being, independence, and choice",
+    "Transparent, responsive, and inclusive care model"
+];
 
 export default function AboutPage() {
   return (
-    <div className="container py-16">
-      <div className="prose lg:prose-xl max-w-4xl mx-auto">
-        <h1 className="font-headline text-4xl font-bold">{pageData.about.title}</h1>
-        <p className="lead">{pageData.about.content}</p>
-        <p>
-            Our team of dedicated professionals is the backbone of our service. We are nurses, carers, and support staff who are passionate about what we do. We believe in building strong relationships with our clients based on trust, respect, and open communication. Our commitment to excellence is reflected in our rigorous training programs and our continuous efforts to improve and innovate our care practices.
-        </p>
-        <p>
-            Based in the heart of London, we are proud to serve our local community, offering a familiar and friendly face to those who need it most. We understand the importance of home and are dedicated to helping our clients live there safely and happily for as long as possible.
-        </p>
+    <div>
+      <section className="relative h-[50vh] min-h-[300px] w-full flex items-center justify-center text-center text-white">
+        {heroImage && (
+          <Image
+            src={heroImage.imageUrl}
+            alt="A compassionate team"
+            fill
+            priority
+            className="object-cover"
+            data-ai-hint={heroImage.imageHint}
+          />
+        )}
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="relative z-10 max-w-4xl px-4">
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl font-headline text-primary-foreground">
+            About Symbolic Care
+          </h1>
+          <p className="mt-6 text-lg md:text-xl text-primary-foreground/90">
+            Compassion, Professionalism, and a Deep Respect for Dignity and Independence.
+          </p>
+        </div>
+      </section>
+
+      <div className="bg-background">
+        <div className="container py-16 space-y-24">
+
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    {introImage && (
+                        <Image
+                            src={introImage.imageUrl}
+                            alt="A team driven by compassion"
+                            width={600}
+                            height={400}
+                            className="rounded-lg shadow-lg object-cover w-full h-auto"
+                            data-ai-hint={introImage.imageHint}
+                        />
+                    )}
+                </div>
+                <div className="prose lg:prose-lg max-w-none">
+                    <h2 className="font-headline text-3xl font-bold">Our Foundation</h2>
+                    <p className="text-muted-foreground">
+                        At Symbolic Care Group Ltd, we are more than just a care provider — we are a team driven by compassion, professionalism, and a deep respect for the dignity and independence of every individual we support.
+                    </p>
+                </div>
+            </section>
+            
+            <section className="text-center">
+                <h2 className="font-headline text-3xl font-bold">Our Leadership</h2>
+                <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <Card className="text-left">
+                        <CardHeader>
+                             {drManpreetImage && (
+                                <Image
+                                    src={drManpreetImage.imageUrl}
+                                    alt="Dr. Manpreet Singh"
+                                    width={120}
+                                    height={120}
+                                    className="rounded-full shadow-lg mx-auto mb-4 border-4 border-primary"
+                                    data-ai-hint={drManpreetImage.imageHint}
+                                />
+                            )}
+                            <CardTitle className="text-center font-headline text-2xl">Dr. Manpreet Singh</CardTitle>
+                            <p className="text-center text-muted-foreground font-semibold">Nominated Individual (CQC)</p>
+                        </CardHeader>
+                        <CardContent className="prose max-w-none text-muted-foreground">
+                           <h3 className="font-headline text-xl font-bold">Leadership Rooted in Healthcare</h3>
+                           <p>Our organisation is proudly led by Dr. Manpreet Singh, a practicing General Practitioner (GP) and our Nominated Individual under the Care Quality Commission (CQC). Dr. Singh brings clinical insight, safeguarding knowledge, and a proactive, person-centred approach to service governance — ensuring all care is safe, effective, and evidence-based.</p>
+                        </CardContent>
+                    </Card>
+                    <Card className="text-left">
+                        <CardHeader>
+                            {mrsMeetuImage && (
+                                <Image
+                                    src={mrsMeetuImage.imageUrl}
+                                    alt="Mrs. Meetu Madaan"
+                                    width={120}
+                                    height={120}
+                                    className="rounded-full shadow-lg mx-auto mb-4 border-4 border-primary"
+                                    data-ai-hint={mrsMeetuImage.imageHint}
+                                />
+                            )}
+                            <CardTitle className="text-center font-headline text-2xl">Mrs. Meetu Madaan</CardTitle>
+                             <p className="text-center text-muted-foreground font-semibold">Registered Manager</p>
+                        </CardHeader>
+                        <CardContent className="prose max-w-none text-muted-foreground">
+                           <h3 className="font-headline text-xl font-bold">Experienced & Empowering Management</h3>
+                           <p>Our Registered Manager, Mrs. Meetu Madaan, is a seasoned leader with a background in healthcare training and business development. Her experience in delivering regulated training across health and social care sectors ensures our team is well-equipped, highly trained, and continually improving. Her passion for quality care and empowerment lies at the heart of every decision we make.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </section>
+
+             <section>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="bg-card p-6 rounded-lg shadow-sm">
+                        <h3 className="font-headline text-xl font-bold mb-4">Our Services</h3>
+                        <ul className="space-y-2">
+                           {ourServices.map((item, i) => (
+                                <li key={i} className="flex items-start">
+                                    <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                         <p className="mt-4 text-sm text-muted-foreground">We specialise in supporting people with a wide range of needs, including learning disabilities, mental health conditions, autism, older adult care, and physical disabilities.</p>
+                    </div>
+                     <div className="bg-card p-6 rounded-lg shadow-sm">
+                        <h3 className="font-headline text-xl font-bold mb-4">Our Mission</h3>
+                        <ul className="space-y-2">
+                           {ourMission.map((item, i) => (
+                                <li key={i} className="flex items-start">
+                                    <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                     <div className="bg-card p-6 rounded-lg shadow-sm">
+                        <h3 className="font-headline text-xl font-bold mb-4">Why Choose Us?</h3>
+                        <ul className="space-y-2">
+                           {whyChooseUs.map((item, i) => (
+                                <li key={i} className="flex items-start">
+                                    <CheckCircle className="h-5 w-5 text-primary mt-1 mr-3 flex-shrink-0" />
+                                    <span className="text-muted-foreground">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+             <section>
+                <h2 className="font-headline text-3xl font-bold text-center">Our Location</h2>
+                <p className="text-muted-foreground text-center mt-4 mb-8">Visit us at our office in London.</p>
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg border">
+                    <Link href="https://www.google.com/maps/search/?api=1&query=51.5072,-0.1276" target="_blank" rel="noopener noreferrer">
+                        <Image
+                            src="https://maps.googleapis.com/maps/api/staticmap?center=51.5072,-0.1276&zoom=14&size=800x450&markers=color:blue%7Clabel:S%7C51.5072,-0.1276&key="
+                            alt="Map of London office"
+                            width={1600}
+                            height={900}
+                            className="w-full h-full object-cover cursor-pointer"
+                        />
+                    </Link>
+                </div>
+            </section>
+
+        </div>
       </div>
     </div>
   );
