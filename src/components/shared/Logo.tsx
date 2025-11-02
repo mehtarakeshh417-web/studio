@@ -7,7 +7,7 @@ export function Logo() {
 
   if (!logoImage) {
     return (
-      <Link href="/" className="font-bold text-xl text-primary">
+      <Link href="/" className="font-bold text-2xl text-primary">
         Symbolic Care
       </Link>
     );
@@ -18,10 +18,10 @@ export function Logo() {
       <Image
         src={logoImage.imageUrl}
         alt={logoImage.description}
-        width={360}
-        height={80}
+        width={480}
+        height={100}
         priority
-        className="h-14 w-auto"
+        className="h-20 w-auto"
         data-ai-hint={logoImage.imageHint}
       />
     </Link>

@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { FloatingActionButtons } from '@/components/shared/FloatingActionButtons';
 
 export const metadata: Metadata = {
   title: 'Symbolic Care Hub',
@@ -27,6 +28,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <FloatingActionButtons />
         <Toaster />
       </body>
     </html>

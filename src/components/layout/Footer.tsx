@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Logo } from "@/components/shared/Logo";
-import { navLinks, socialLinks } from "@/lib/data";
+import { navLinks, socialLinks, footerLogos } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -52,6 +53,31 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+        <div className="mt-12 border-t pt-8">
+          <h3 className="text-center font-bold tracking-wider uppercase">
+            Our Accreditations
+          </h3>
+          <div className="mt-6 flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
+            {footerLogos.map((logo) => (
+              <a
+                key={logo.name}
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative h-16 w-32"
+              >
+                <Image
+                  src={logo.imageUrl}
+                  alt={logo.name}
+                  fill
+                  className="object-contain"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-8 border-t pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Symbolic Care. All rights reserved.

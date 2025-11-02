@@ -132,3 +132,11 @@ export const socialLinks = [
     { name: 'Twitter', href: '#', icon: Twitter },
     { name: 'LinkedIn', href: '#', icon: Linkedin },
 ]
+
+export const footerLogos = [
+    { name: 'CQC Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=CQC' },
+    { name: 'ICO Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=ICO' },
+    { name: 'Disability Confident Committed Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=Disability+Confident' },
+    { name: 'Skills Provider Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=Skills+Provider' },
+    { name: 'U Check Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=U+Check' },
+];

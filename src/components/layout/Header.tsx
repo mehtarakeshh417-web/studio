@@ -13,6 +13,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { AccessibilityToolbar } from '@/components/shared/AccessibilityToolbar';
 
 export function Header() {
   const pathname = usePathname();
@@ -20,57 +21,59 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
+      <div className="container flex h-24 items-center justify-between">
         <Logo />
-        <nav className="hidden md:flex items-center space-x-6 text-base font-bold">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                'transition-colors hover:text-primary',
-                pathname === link.href ? 'text-primary' : 'text-foreground/70'
-              )}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-        
-        <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="outline" size="icon">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-full max-w-sm">
-            <div className="flex h-full flex-col">
-              <div className="flex items-center justify-between border-b pb-6">
-                <Logo />
-                <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                  <X className="h-6 w-6" />
-                  <span className="sr-only">Close menu</span>
-                </Button>
+        <div className="flex items-center gap-4">
+          <nav className="hidden md:flex items-center space-x-6 text-lg font-bold">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  'transition-colors hover:text-primary',
+                  pathname === link.href ? 'text-primary' : 'text-primary/70'
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+          <AccessibilityToolbar />
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="outline" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-full max-w-sm">
+              <div className="flex h-full flex-col">
+                <div className="flex items-center justify-between border-b pb-6">
+                  <Logo />
+                  <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                    <X className="h-6 w-6" />
+                    <span className="sr-only">Close menu</span>
+                  </Button>
+                </div>
+                <nav className="flex flex-col space-y-4 py-6">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={cn(
+                        'text-xl font-bold transition-colors hover:text-primary',
+                        pathname === link.href ? 'text-primary' : 'text-primary/90'
+                      )}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </nav>
               </div>
-              <nav className="flex flex-col space-y-4 py-6">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                      'text-lg font-bold transition-colors hover:text-primary',
-                      pathname === link.href ? 'text-primary' : 'text-foreground'
-                    )}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </SheetContent>
-        </Sheet>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
