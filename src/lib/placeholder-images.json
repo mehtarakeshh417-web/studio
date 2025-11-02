@@ -14,26 +14,26 @@
     },
     {
       "id": "service-live-in-care",
-      "description": "A comfortable and bright living room, ready for a resident.",
-      "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc2MTk5NjQxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "living room"
+      "description": "A doctor talking to an elderly patient in a comforting environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc2MjAxNTQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor patient"
     },
     {
       "id": "service-domiciliary-care",
-      "description": "A friendly caregiver smiling warmly, ready to provide home support.",
-      "imageUrl": "https://images.unsplash.com/photo-1684994878579-bb6faca336e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmllbmRseSUyMGNhcmVnaXZlcnxlbnwwfHx8fDE3NjIxMDY0Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "friendly caregiver"
+      "description": "A friendly caregiver assisting an elderly person at home.",
+      "imageUrl": "https://images.unsplash.com/photo-1591688535138-8b1995fe8891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FyZWdpdmVyJTIwc2VuaW9yfGVufDB8fHx8MTc2MjEwNjU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caregiver senior"
     },
     {
       "id": "service-respite-care",
-      "description": "A calm and tranquil garden scene, evoking peace and rest.",
-      "imageUrl": "https://images.unsplash.com/photo-1761637823183-f5b3176a2fbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjZWZ1bCUyMGdhcmRlbnxlbnwwfHx8fDE3NjIwMTc3MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "peaceful garden"
+      "description": "An elderly person and a caregiver sharing a laugh in a garden.",
+      "imageUrl": "https://images.unsplash.com/photo-1670691238618-f928272dbd1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2VuaW9yJTIwY29tcGFuaW9ufGVufDB8fHx8MTc2MjEwNjU3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "senior companion"
     },
     {
       "id": "service-specialist-care",
-      "description": "A healthcare professional checking on a patient with care.",
-      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2MjAzNjU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A healthcare professional checking on an elderly patient with care.",
+      "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2MjAzNjU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "healthcare professional"
     },
     {
@@ -44,27 +44,27 @@
     },
     {
       "id": "service-supported-living",
-      "description": "A modern, accessible home exterior symbolizing independence.",
-      "imageUrl": "https://images.unsplash.com/photo-1649083048770-82e8ffd80431?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjBob21lfGVufDB8fHx8MTc2MjEwNjQzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern home"
+      "description": "An elderly person enjoying their time in a comfortable and bright living room.",
+      "imageUrl": "https://images.unsplash.com/photo-1496938461470-aaa34930e2d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzZW5pb3IlMjBsaXZpbmd8ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "senior living"
     },
     {
       "id": "service-cqc-consultancy",
-      "description": "Two professionals in a meeting, reviewing documents with a positive attitude.",
-      "imageUrl": "https://images.unsplash.com/photo-1714974528737-3e6c7e4d11af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBtZWV0aW5nfGVufDB8fHx8MTc2MjEwNjQzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional meeting"
+      "description": "A group of healthcare professionals having a discussion.",
+      "imageUrl": "https://images.unsplash.com/photo-1761195689615-9469b65dac01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFscyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professionals meeting"
     },
     {
       "id": "service-medical-services",
-      "description": "A stethoscope and a clipboard on a clean, professional surface.",
-      "imageUrl": "https://images.unsplash.com/photo-1700832082200-af7deeb63d9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZWRpY2FsJTIwdG9vbHN8ZW58MHx8fHwxNzYyMDQ5NjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "medical tools"
+      "description": "A nurse checking the blood pressure of a smiling elderly man.",
+      "imageUrl": "https://images.unsplash.com/photo-1757706999373-deec72fea1e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxudXJzZSUyMHBhdGllbnR8ZW58MHx8fHwxNzYyMDM2NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nurse patient"
     },
     {
       "id": "service-other-services",
-      "description": "A collage of diverse faces, representing a variety of services.",
-      "imageUrl": "https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGl2ZXJzZSUyMHBlb3BsZXxlbnwwfHx8fDE3NjIwMDc3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "diverse people"
+      "description": "A group of elderly people happily socializing in a care center.",
+      "imageUrl": "https://images.unsplash.com/photo-1761415449664-dbeac9474437?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZW5pb3JzJTIwc29jaWFsaXppbmd8ZW58MHx8fHwxNzYyMTA2NTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "seniors socializing"
     },
     {
       "id": "domiciliary-care-section-1",
@@ -159,7 +159,7 @@
     {
       "id": "trainings-hero",
       "description": "A diverse group of professionals in a training session.",
-      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "professional training"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "trainings-section-2",
       "description": "A person receiving a certificate of achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1571260899104-6a0fb892b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1571260899104-6a0fb892b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "achievement certificate"
     },
     {
