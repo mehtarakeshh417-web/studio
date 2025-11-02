@@ -40,6 +40,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   devIndicators: {
@@ -51,3 +57,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+    
