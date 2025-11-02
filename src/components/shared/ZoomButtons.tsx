@@ -11,12 +11,19 @@ const MAX_ZOOM = 1.5; // 150%
 
 export function ZoomButtons() {
   const [currentLevel, setCurrentLevel] = useState(3); // Start at level 3 (1.0rem)
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const step = (MAX_ZOOM - MIN_ZOOM) / (ZOOM_LEVELS - 1);
-    const fontSize = MIN_ZOOM + (currentLevel * step);
-    document.documentElement.style.fontSize = `${fontSize}rem`;
-  }, [currentLevel]);
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (isMounted) {
+      const step = (MAX_ZOOM - MIN_ZOOM) / (ZOOM_LEVELS - 1);
+      const fontSize = MIN_ZOOM + (currentLevel * step);
+      document.documentElement.style.fontSize = `${fontSize}rem`;
+    }
+  }, [currentLevel, isMounted]);
 
   const zoomIn = () => {
     setCurrentLevel((prev) => Math.min(prev + 1, ZOOM_LEVELS - 1));
@@ -25,6 +32,10 @@ export function ZoomButtons() {
   const zoomOut = () => {
     setCurrentLevel((prev) => Math.max(prev - 1, 0));
   };
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <motion.div 

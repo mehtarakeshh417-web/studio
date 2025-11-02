@@ -4,8 +4,19 @@ import { Phone, MessageCircle, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState, useEffect } from 'react';
 
 export function FloatingActionButtons() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+  
   return (
     <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
