@@ -10,14 +10,17 @@ const MIN_ZOOM = 0.8; // 80%
 const MAX_ZOOM = 1.5; // 150%
 
 export function ZoomButtons() {
-  const [currentLevel, setCurrentLevel] = useState(3); // Start at level 3 (1.0rem)
+  // We initialize state to a value that can be rendered on the server without causing a mismatch.
+  const [currentLevel, setCurrentLevel] = useState(3);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // This effect runs only on the client, after the initial render.
     setIsMounted(true);
   }, []);
 
   useEffect(() => {
+    // This effect also runs only on the client. We check isMounted to be sure.
     if (isMounted) {
       const step = (MAX_ZOOM - MIN_ZOOM) / (ZOOM_LEVELS - 1);
       const fontSize = MIN_ZOOM + (currentLevel * step);
@@ -34,6 +37,7 @@ export function ZoomButtons() {
     setCurrentLevel((prev) => Math.max(prev - 1, 0));
   };
 
+  // By returning null until the component is mounted on the client, we avoid the hydration mismatch.
   if (!isMounted) {
     return null;
   }
