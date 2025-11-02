@@ -15,7 +15,7 @@
     {
       "id": "service-live-in-care",
       "description": "A doctor talking to an elderly patient in a comforting environment.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762111663/2_csiijg.png",
+      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110930/7_dbdffi.png",
       "imageHint": "adult care"
     },
     {
@@ -57,13 +57,13 @@
     {
       "id": "service-medical-services",
       "description": "A nurse checking the blood pressure of a smiling elderly man.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110929/6_jyml3r.png",
+      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762111663/5_g1sz0u.png",
       "imageHint": "adult care"
     },
     {
       "id": "service-other-services",
       "description": "A group of elderly people happily socializing in a care center.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110930/8_m32e2r.png",
+      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762111663/6_fsgbxx.png",
       "imageHint": "adult care"
     },
     {
