@@ -42,6 +42,14 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+               <li>
+                  <Link
+                    href="/admin/login"
+                    className="text-sm transition-colors hover:text-primary"
+                  >
+                    Admin
+                  </Link>
+                </li>
             </ul>
           </div>
           <div className="md:col-span-1">
