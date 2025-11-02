@@ -18,10 +18,10 @@ export function Logo() {
       <Image
         src={logoImage.imageUrl}
         alt={logoImage.description}
-        width={180}
-        height={40}
+        width={360}
+        height={80}
         priority
-        className="h-10 w-auto"
+        className="h-14 w-auto"
         data-ai-hint={logoImage.imageHint}
       />
     </Link>
