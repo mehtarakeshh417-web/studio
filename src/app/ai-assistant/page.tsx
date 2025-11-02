@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Bot, User, Send, Loader } from 'lucide-react';
-import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import { askHealthAssistant } from '@/ai/flows/health-assistant-flow';
 import { Button } from '@/components/ui/button';
@@ -49,11 +48,10 @@ export default function AiAssistantPage() {
   return (
     <div className="relative min-h-[calc(100vh-10rem)] flex flex-col">
       {heroImage && (
-        <Image
+        <img
           src={heroImage.imageUrl}
           alt="Background"
-          fill
-          className="object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0"
           data-ai-hint={heroImage.imageHint}
         />
       )}
