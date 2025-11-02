@@ -21,7 +21,8 @@ export function ZoomButtons() {
     if (isMounted) {
       const step = (MAX_ZOOM - MIN_ZOOM) / (ZOOM_LEVELS - 1);
       const fontSize = MIN_ZOOM + (currentLevel * step);
-      document.documentElement.style.fontSize = `${fontSize}rem`;
+      // Using 16 as the base font size for rem calculation
+      document.documentElement.style.fontSize = `${16 * fontSize}px`;
     }
   }, [currentLevel, isMounted]);
 
