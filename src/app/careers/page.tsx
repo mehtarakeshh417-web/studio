@@ -67,9 +67,9 @@ export default async function CareersPage() {
                   </CardContent>
                   <CardFooter>
                     <Button asChild className="w-full">
-                      <a href={`mailto:contact@symboliccare.co.uk?subject=Application for ${encodeURIComponent(job.title)}`}>
+                       <Link href={`/careers/apply?jobId=${job.id}&jobTitle=${encodeURIComponent(job.title)}`}>
                         <FileText className="mr-2 h-4 w-4" /> Apply Now
-                      </a>
+                      </Link>
                     </Button>
                   </CardFooter>
                 </Card>

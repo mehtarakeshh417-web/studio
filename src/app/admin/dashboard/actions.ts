@@ -4,6 +4,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { revalidatePath } from 'next/cache';
+import * as z from 'zod';
 
 export type Job = {
   id: string;
@@ -13,11 +14,24 @@ export type Job = {
   type: 'Full-time' | 'Part-time' | 'Contract';
 };
 
-const jobsFilePath = path.join(process.cwd(), 'src', 'lib', 'jobs.json');
+export type Application = {
+  id: string;
+  jobId: string;
+  jobTitle: string;
+  name: string;
+  email: string;
+  phone: string;
+  cvPath: string;
+  appliedAt: string;
+};
 
-async function readJobsFile(): Promise<Job[]> {
+const jobsFilePath = path.join(process.cwd(), 'src', 'lib', 'jobs.json');
+const applicationsFilePath = path.join(process.cwd(), 'src', 'lib', 'applications.json');
+
+// Helper function to read a JSON file
+async function readJsonFile<T>(filePath: string): Promise<T[]> {
   try {
-    const data = await fs.readFile(jobsFilePath, 'utf-8');
+    const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (error: any) {
     if (error.code === 'ENOENT') {
@@ -27,30 +41,97 @@ async function readJobsFile(): Promise<Job[]> {
   }
 }
 
-async function writeJobsFile(jobs: Job[]): Promise<void> {
-  await fs.writeFile(jobsFilePath, JSON.stringify(jobs, null, 2), 'utf-8');
+// Helper function to write to a JSON file
+async function writeJsonFile<T>(filePath: string, data: T[]): Promise<void> {
+  await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
 }
 
+// Job-related actions
 export async function getJobs(): Promise<Job[]> {
-  return await readJobsFile();
+  return await readJsonFile<Job>(jobsFilePath);
 }
 
 export async function addJob(newJobData: Omit<Job, 'id'>): Promise<void> {
-  const jobs = await readJobsFile();
+  const jobs = await getJobs();
   const newJob: Job = {
     id: new Date().toISOString() + Math.random().toString(36).substr(2, 9),
     ...newJobData,
   };
   const updatedJobs = [newJob, ...jobs];
-  await writeJobsFile(updatedJobs);
+  await writeJsonFile(jobsFilePath, updatedJobs);
   revalidatePath('/careers');
   revalidatePath('/admin/dashboard');
 }
 
 export async function deleteJob(id: string): Promise<void> {
-  const jobs = await readJobsFile();
+  const jobs = await getJobs();
   const updatedJobs = jobs.filter((job) => job.id !== id);
-  await writeJobsFile(updatedJobs);
+  await writeJsonFile(jobsFilePath, updatedJobs);
   revalidatePath('/careers');
   revalidatePath('/admin/dashboard');
+}
+
+// Application-related actions
+export async function getApplications(): Promise<Application[]> {
+    return (await readJsonFile<Application>(applicationsFilePath)).sort((a, b) => new Date(b.appliedAt).getTime() - new Date(a.appliedAt).getTime());
+}
+
+const applicationSchema = z.object({
+  name: z.string().min(2, "Name is too short"),
+  email: z.string().email(),
+  phone: z.string().min(10, "Phone number seems too short"),
+  jobId: z.string(),
+  jobTitle: z.string(),
+});
+
+export async function submitApplication(formData: FormData): Promise<{ success: boolean; message: string }> {
+  const validatedFields = applicationSchema.safeParse(Object.fromEntries(formData.entries()));
+  const cvFile = formData.get('cv') as File | null;
+
+  if (!validatedFields.success) {
+    return { success: false, message: "Invalid form data." };
+  }
+  
+  if (!cvFile || cvFile.size === 0) {
+    return { success: false, message: "CV is required." };
+  }
+
+  const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+  if (!allowedTypes.includes(cvFile.type)) {
+    return { success: false, message: "Invalid file type. Please upload a PDF, DOC, or DOCX." };
+  }
+
+  try {
+    // Handle file upload
+    const uploadsDir = path.join(process.cwd(), 'public', 'uploads');
+    await fs.mkdir(uploadsDir, { recursive: true });
+    
+    const fileExtension = path.extname(cvFile.name);
+    const uniqueFilename = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}${fileExtension}`;
+    const cvPath = path.join(uploadsDir, uniqueFilename);
+    const cvUrlPath = `/uploads/${uniqueFilename}`;
+
+    const bytes = await cvFile.arrayBuffer();
+    const buffer = Buffer.from(bytes);
+    await fs.writeFile(cvPath, buffer);
+
+    // Save application data
+    const applications = await getApplications();
+    const newApplication: Application = {
+      id: new Date().toISOString() + Math.random().toString(36).substr(2, 9),
+      ...validatedFields.data,
+      cvPath: cvUrlPath,
+      appliedAt: new Date().toISOString(),
+    };
+    
+    const updatedApplications = [newApplication, ...applications];
+    await writeJsonFile(applicationsFilePath, updatedApplications);
+    
+    revalidatePath('/admin/dashboard');
+
+    return { success: true, message: "Application submitted successfully!" };
+  } catch (error) {
+    console.error("Application submission error:", error);
+    return { success: false, message: "An unexpected error occurred." };
+  }
 }
