@@ -28,24 +28,25 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center">
-        <Logo />
-        
-        <nav className="hidden md:flex flex-1 justify-end items-center space-x-4 whitespace-nowrap">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                'text-sm font-bold transition-colors hover:text-primary',
-                pathname === link.href ? 'text-primary' : 'text-primary/70'
-              )}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-6">
+          <Logo />
+          <nav className="hidden md:flex items-center space-x-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  'text-lg font-bold transition-colors hover:text-primary whitespace-nowrap',
+                  pathname === link.href ? 'text-primary' : 'text-primary/70'
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex flex-1 items-center justify-end gap-4 md:hidden">
           {isClient && <AccessibilityToolbar />}
           
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -83,7 +84,7 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
-         <div className="hidden md:flex items-center gap-4 ml-6">
+         <div className="hidden md:flex flex-1 items-center justify-end gap-4">
             {isClient && <AccessibilityToolbar />}
         </div>
       </div>
