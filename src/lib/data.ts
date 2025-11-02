@@ -1,17 +1,8 @@
 import type { LucideIcon, LucideProps } from 'lucide-react';
 import {
-  HeartHandshake,
-  Home,
-  Users,
-  Stethoscope,
-  Clock,
-  BrainCircuit,
-  Smile,
-  UserCheck,
   Facebook,
   Twitter,
   Linkedin,
-  type Icon as LucideIconType,
 } from 'lucide-react';
 import { icons } from 'lucide-react';
 
