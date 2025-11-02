@@ -158,7 +158,7 @@ export const supportResources = [
     ]
   },
   {
-    category: 'Learning Disability and Autism',
+    category: 'Learning Disability & Autism',
     icon: 'Users',
     links: [
       { name: 'Mencap', url: 'https://www.mencap.org.uk/', description: 'Support, advocacy, and learning resources' },
@@ -209,7 +209,7 @@ export const supportResources = [
     ]
   },
   {
-    category: 'Government and Training Guidance',
+    category: 'Government & Training Guidance',
     icon: 'BookOpen',
     links: [
       { name: 'NHS Health Education England – e-Learning for Health', url: 'https://www.e-lfh.org.uk/', description: 'Free online NHS training' },

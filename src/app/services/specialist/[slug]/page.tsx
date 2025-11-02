@@ -13,7 +13,7 @@ type SpecialistServicePageProps = {
 
 export async function generateStaticParams() {
   return supportResources
-    .filter(r => r.category !== 'Government and Training Guidance' && r.category !== 'Useful Emergency / Urgent Contacts')
+    .filter(r => r.category !== 'Government & Training Guidance' && r.category !== 'Useful Emergency / Urgent Contacts')
     .map((resource) => ({
       slug: resource.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-'),
     }));
