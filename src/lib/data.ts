@@ -13,18 +13,7 @@ import {
   Linkedin,
   type Icon as LucideIconType,
 } from 'lucide-react';
-import dynamic from 'next/dynamic';
-
-const Icons = {
-  HeartHandshake,
-  Home,
-  Users,
-  Stethoscope,
-  Clock,
-  BrainCircuit,
-  Smile,
-  UserCheck
-}
+import { icons } from 'lucide-react';
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -42,7 +31,7 @@ export type Service = {
   slug: string;
   description: string;
   longDescription: string;
-  icon: keyof typeof Icons;
+  icon: keyof typeof icons;
   imageId: string;
 };
 

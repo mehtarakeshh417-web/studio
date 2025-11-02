@@ -15,7 +15,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import dynamic from 'next/dynamic';
 import { icons } from 'lucide-react';
 
 type ServiceCardProps = {
