@@ -1,7 +1,18 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  webpack: (config, { isServer }) => {
+    // Ensure the watcher polls for changes every 300ms.
+    // This is necessary for some environments where file system events are not propagated correctly.
+    if (!isServer) {
+      config.watchOptions = {
+        poll: 300,
+      };
+    }
+    return config;
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
