@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  env: {
+    ADMIN_PASSWORD: process.env.ADMIN_PASSWORD,
+  },
   images: {
     remotePatterns: [
       {

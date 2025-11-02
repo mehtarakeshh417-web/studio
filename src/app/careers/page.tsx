@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { MapPin, Briefcase, FileText, Info, DollarSign, Award } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 export default async function CareersPage() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'careers-hero');
@@ -52,10 +53,10 @@ export default async function CareersPage() {
           </div>
 
           {jobs.length > 0 ? (
-            <div className="space-y-8">
+            <div className="space-y-8 max-w-4xl mx-auto">
               {jobs.map((job) => (
-                <Card key={job.id} className="flex flex-col md:flex-row">
-                  <CardHeader className="flex-grow">
+                <Card key={job.id} className="flex flex-col">
+                  <CardHeader>
                     <CardTitle className="font-headline text-2xl">{job.title}</CardTitle>
                     <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
                       <span className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {job.location}</span>
@@ -63,23 +64,29 @@ export default async function CareersPage() {
                       <span className="flex items-center gap-2"><DollarSign className="h-4 w-4" /> {job.salary}</span>
                       <span className="flex items-center gap-2"><Award className="h-4 w-4" /> {job.experienceLevel}</span>
                     </CardDescription>
-                    <div className="pt-4 space-y-4 text-sm text-muted-foreground">
-                        <div>
-                            <h4 className="font-bold text-foreground">Description</h4>
-                            <p className="line-clamp-2">{job.description}</p>
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-foreground">Key Responsibilities</h4>
-                            <p className="line-clamp-2">{job.responsibilities}</p>
-                        </div>
-                         <div>
-                            <h4 className="font-bold text-foreground">Required Skills</h4>
-                            <p className="line-clamp-2">{job.skills}</p>
-                        </div>
-                    </div>
                   </CardHeader>
-                  <CardFooter className="p-6 items-center border-t md:border-t-0 md:border-l">
-                    <Button asChild className="w-full md:w-auto">
+                  <CardContent className="space-y-4 text-sm text-muted-foreground">
+                      <div>
+                          <h4 className="font-bold text-foreground mb-2">Description</h4>
+                          <p>{job.description}</p>
+                      </div>
+                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 className="font-bold text-foreground mb-2">Key Responsibilities</h4>
+                            <div className="prose prose-sm max-w-none text-muted-foreground">
+                              <ReactMarkdown>{job.responsibilities}</ReactMarkdown>
+                            </div>
+                        </div>
+                          <div>
+                            <h4 className="font-bold text-foreground mb-2">Required Skills</h4>
+                             <div className="prose prose-sm max-w-none text-muted-foreground">
+                              <ReactMarkdown>{job.skills}</ReactMarkdown>
+                            </div>
+                        </div>
+                      </div>
+                  </CardContent>
+                  <CardFooter className="p-6 bg-muted/50 mt-auto">
+                    <Button asChild className="w-full md:w-auto ml-auto">
                        <Link href={`/careers/apply?jobId=${job.id}&jobTitle=${encodeURIComponent(job.title)}`}>
                         <FileText className="mr-2 h-4 w-4" /> Apply Now
                       </Link>

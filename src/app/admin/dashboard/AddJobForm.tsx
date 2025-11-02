@@ -24,6 +24,9 @@ import {
 } from "@/components/ui/select";
 import { useToast } from '@/hooks/use-toast';
 import type { Job } from './actions';
+import { generateJobDescription } from '@/ai/flows/job-description-flow';
+import { Sparkles, Loader2 } from 'lucide-react';
+import { useState } from 'react';
 
 const formSchema = z.object({
   title: z.string().min(5, 'Title must be at least 5 characters.'),
@@ -54,6 +57,8 @@ function SubmitButton() {
 
 export function AddJobForm({ addJobAction }: AddJobFormProps) {
   const { toast } = useToast();
+  const [isGenerating, setIsGenerating] = useState(false);
+
   const form = useForm<AddJobFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -67,6 +72,39 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
       skills: '',
     },
   });
+
+  const handleGenerateDescription = async () => {
+    const title = form.getValues('title');
+    if (!title) {
+      toast({
+        variant: 'destructive',
+        title: 'Title is required',
+        description: 'Please enter a job title before generating.',
+      });
+      return;
+    }
+
+    setIsGenerating(true);
+    try {
+      const result = await generateJobDescription({ title });
+      form.setValue('description', result.description, { shouldValidate: true });
+      form.setValue('responsibilities', result.responsibilities, { shouldValidate: true });
+      form.setValue('skills', result.skills, { shouldValidate: true });
+      toast({
+        title: 'Content Generated',
+        description: 'Job details have been filled in.',
+      });
+    } catch (error) {
+      toast({
+        variant: 'destructive',
+        title: 'Generation Failed',
+        description: 'Could not generate job description. Please try again.',
+      });
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
 
   const onSubmit = async (values: AddJobFormValues) => {
     try {
@@ -173,6 +211,16 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
             </FormItem>
           )}
         />
+        <div className="space-y-1">
+          <Button type="button" variant="outline" size="sm" onClick={handleGenerateDescription} disabled={isGenerating}>
+            {isGenerating ? (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            ) : (
+              <Sparkles className="mr-2 h-4 w-4" />
+            )}
+            Generate with AI
+          </Button>
+        </div>
         <FormField
           control={form.control}
           name="description"

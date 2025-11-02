@@ -13,9 +13,14 @@ export default function AdminLoginPage() {
   const [error, setError] = useState('');
   const router = useRouter();
 
+  // It's recommended to use a more secure method for password verification in a real application.
+  const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'symbolic_care_admin_2024!';
+
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === '123456') {
+    if (password === adminPassword) {
+      // In a real app, you'd set a secure, http-only cookie or a session token.
+      // For this prototype, we'll rely on simple navigation.
       router.push('/admin/dashboard');
     } else {
       setError('Incorrect password. Please try again.');
