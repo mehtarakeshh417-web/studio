@@ -81,13 +81,13 @@
     {
       "id": "supported-living-hero",
       "description": "Person smiling and living independently in their modern apartment.",
-      "imageUrl": "https://images.unsplash.com/photo-1758874573188-5d7380fa647a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmRlcGVuZGVudCUyMGxpdmluZ3xlbnwwfHx8fDE3NjIwOTA4MjN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758874573188-5d7380fa647a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmRlcGVuZGVudCUyMGxpdmluZ3xlbnwwfHx8fDE3NjIwOTA4MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "independent living"
     },
     {
       "id": "supported-living-intro",
       "description": "A person with a disability working on a laptop in a comfortable living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "empowerment accessible"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "respite-care-hero",
       "description": "A calm and peaceful room with a comfortable chair.",
-      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZWFjZSUyMG9mJTIwbWluZHxlbnwwfHx8fDE3NjIxMDY1MzJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZWFjZSUyMG9mJTIwbWluZHxlbnwwfHx8fDE3NjIxMDY1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "peace mind"
     },
     {
@@ -152,9 +152,9 @@
     },
     {
       "id": "why-choose-us-hero",
-      "description": "A compassionate caregiver smiling warmly.",
-      "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXJlZ2l2ZXJ8ZW58MHx8fHwxNzYyMTI3MDk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "caregiver smile"
+      "description": "A group of happy, diverse seniors enjoying an activity together.",
+      "imageUrl": "https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGFkdWx0JTIwY2FyZXxlbnwwfHx8fDE3MjE5Mjc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy adult care"
     }
   ]
 }
