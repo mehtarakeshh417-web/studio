@@ -31,30 +31,6 @@
       "imageHint": "peaceful garden"
     },
     {
-      "id": "service-palliative-care",
-      "description": "Hands holding each other in support.",
-      "imageUrl": "https://images.unsplash.com/photo-1592254765718-02cdd14502fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxob2xkaW5nJTIwaGFuZHN8ZW58MHx8fHwxNzYyMDEyNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "holding hands"
-    },
-    {
-      "id": "service-dementia-care",
-      "description": "A person working on a puzzle.",
-      "imageUrl": "https://images.unsplash.com/photo-1637094408647-0d81d08f81b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwdXp6bGUlMjBnYW1lfGVufDB8fHx8MTc2MjA2MDYwNXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "puzzle game"
-    },
-    {
-      "id": "service-companionship-care",
-      "description": "Two people having a warm conversation.",
-      "imageUrl": "https://images.unsplash.com/photo-1542338325-1f6bcd66aad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb252ZXJzYXRpb24lMjB0ZWF8ZW58MHx8fHwxNzYyMDg0OTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "conversation tea"
-    },
-    {
-      "id": "service-personal-care",
-      "description": "A neat and tidy bathroom.",
-      "imageUrl": "https://images.unsplash.com/photo-1495468986598-4cd0d30c7805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGVhbiUyMGJhdGhyb29tfGVufDB8fHx8MTc2MjA3NTc4NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clean bathroom"
-    },
-    {
       "id": "service-specialist-care",
       "description": "Medical equipment in a home setting.",
       "imageUrl": "https://images.unsplash.com/photo-1551076805-e1869033e561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2MjAzOTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -65,6 +41,30 @@
       "description": "Abstract medical background with soft colors.",
       "imageUrl": "https://images.unsplash.com/photo-1579684385127-6c17937c1275?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoZWFsdGglMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MjA4Njc3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "health technology"
+    },
+    {
+      "id": "service-supported-living",
+      "description": "A modern and accessible apartment building.",
+      "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern apartment"
+    },
+    {
+      "id": "service-cqc-consultancy",
+      "description": "A professional writing on a clipboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1758599543378-ba892b220c89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBjbGlwYm9hcmR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional clipboard"
+    },
+    {
+      "id": "service-medical-services",
+      "description": "A doctor's bag on a table.",
+      "imageUrl": "https://images.unsplash.com/photo-1610566218600-5c535199f1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBiYWd8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor bag"
+    },
+    {
+      "id": "service-other-services",
+      "description": "A question mark made of colorful blocks.",
+      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "question mark"
     }
   ]
 }

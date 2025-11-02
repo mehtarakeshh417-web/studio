@@ -27,15 +27,7 @@ export type Service = {
 };
 
 export const services: Service[] = [
-  {
-    title: 'Live-in Care',
-    slug: 'live-in-care',
-    description: 'Continuous care and support in the comfort of your own home.',
-    longDescription: 'Our Live-in Care service provides round-the-clock support from a dedicated carer who lives with you in your home. This ensures continuous companionship and assistance, promoting independence and peace of mind for you and your loved ones. We tailor our care plans to your specific needs, routines, and preferences.',
-    icon: 'Home',
-    imageId: 'service-live-in-care',
-  },
-  {
+    {
     title: 'Domiciliary Care',
     slug: 'domiciliary-care',
     description: 'Flexible care visits to support your independent living at home.',
@@ -44,7 +36,23 @@ export const services: Service[] = [
     imageId: 'service-domiciliary-care',
   },
   {
-    title: 'Respite Care',
+    title: 'Supported Living Services',
+    slug: 'supported-living-services',
+    description: 'Personalised support to help you live independently in your own home or in supported accommodation.',
+    longDescription: 'Our Supported Living services are designed to empower individuals with various needs to live as independently as possible. We provide tailored support in your own home or in a supported living setting, focusing on developing life skills, managing daily tasks, and fostering community integration.',
+    icon: 'Building',
+    imageId: 'service-supported-living',
+  },
+    {
+    title: 'Overnight & 24 Hour Live in Care Services',
+    slug: 'live-in-care',
+    description: 'Continuous care and support in the comfort of your own home, day and night.',
+    longDescription: 'Our Live-in Care service provides round-the-clock support from a dedicated carer who lives with you in your home. This ensures continuous companionship and assistance, promoting independence and peace of mind for you and your loved ones. We tailor our care plans to your specific needs, routines, and preferences, including overnight and 24-hour options.',
+    icon: 'Home',
+    imageId: 'service-live-in-care',
+  },
+  {
+    title: 'Respite Care Services',
     slug: 'respite-care',
     description: 'Short-term care to give regular carers a well-deserved break.',
     longDescription: 'Our Respite Care service offers temporary support, allowing primary carers to take a break, rest, and recharge. Whether it\'s for a few hours, a few days, or longer, we provide professional and compassionate care, ensuring your loved one is in safe hands while you take time for yourself.',
@@ -52,44 +60,36 @@ export const services: Service[] = [
     imageId: 'service-respite-care',
   },
   {
-    title: 'Palliative Care',
-    slug: 'palliative-care',
-    description: 'Compassionate support to improve quality of life for individuals.',
-    longDescription: 'Palliative care focuses on providing relief from the symptoms and stress of a serious illness. Our goal is to improve quality of life for both the patient and the family. Our multidisciplinary team works with you to provide medical, emotional, and spiritual support tailored to your needs.',
-    icon: 'HeartHandshake',
-    imageId: 'service-palliative-care',
-  },
-  {
-    title: 'Dementia Care',
-    slug: 'dementia-care',
-    description: 'Specialised care for individuals living with dementia.',
-    longDescription: 'We provide specialised care for individuals living with dementia, focusing on creating a safe, familiar, and calming environment. Our carers are trained to understand the challenges of dementia and offer patient, compassionate support that promotes dignity, reduces anxiety, and enhances quality of life.',
-    icon: 'BrainCircuit',
-    imageId: 'service-dementia-care',
-  },
-  {
-    title: 'Companionship',
-    slug: 'companionship-care',
-    description: 'Friendly company and support with daily activities and hobbies.',
-    longDescription: 'Loneliness can have a significant impact on well-being. Our companionship service provides a friendly face and a helping hand, whether it\'s for a chat over a cup of tea, a walk in the park, or assistance with hobbies and social outings. We match our carers to your interests and personality.',
-    icon: 'Smile',
-    imageId: 'service-companionship-care',
-  },
-  {
-    title: 'Personal Care',
-    slug: 'personal-care',
-    description: 'Dignified assistance with personal routines like bathing and dressing.',
-    longDescription: 'Our Personal Care service offers sensitive and respectful assistance with daily personal routines such as bathing, dressing, grooming, and toileting. We prioritise your dignity and comfort, empowering you to maintain your personal hygiene and appearance with confidence.',
-    icon: 'UserCheck',
-    imageId: 'service-personal-care',
-  },
-  {
-    title: 'Specialist Care',
+    title: 'Specialist Services',
     slug: 'specialist-care',
     description: 'Expert care for complex conditions, led by healthcare professionals.',
     longDescription: 'For individuals with complex health needs, our Specialist Care service provides expert support managed by qualified healthcare professionals. We cover a range of conditions, ensuring that you receive clinical expertise and personalised care in the comfort of your own home.',
     icon: 'Stethoscope',
     imageId: 'service-specialist-care',
+  },
+    {
+    title: 'CQC Registration Consultancy Services',
+    slug: 'cqc-consultancy',
+    description: 'Expert guidance to navigate the CQC registration process successfully.',
+    longDescription: 'Our consultancy service provides comprehensive support for healthcare providers seeking to register with the Care Quality Commission (CQC). We offer expert advice, assistance with documentation, and preparation for inspections to ensure you meet all regulatory requirements.',
+    icon: 'FileText',
+    imageId: 'service-cqc-consultancy',
+  },
+  {
+    title: 'Medical Services',
+    slug: 'medical-services',
+    description: 'Professional medical support delivered in your home environment.',
+    longDescription: 'We provide a range of medical services in the home, delivered by qualified healthcare professionals. This can include wound care, medication management, and monitoring of chronic conditions, ensuring you receive clinical care without needing to travel.',
+    icon: 'HeartPulse',
+    imageId: 'service-medical-services',
+  },
+  {
+    title: 'Other Services',
+    slug: 'other-services',
+    description: 'A range of additional services to meet your unique needs.',
+    longDescription: 'We understand that everyone\'s needs are different. Our "Other Services" category covers a variety of additional support options, including companionship, personal care, dementia care, and more. Contact us to discuss your specific requirements.',
+    icon: 'Plus',
+    imageId: 'service-other-services',
   },
 ];
 
