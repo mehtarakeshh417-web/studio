@@ -63,7 +63,7 @@
     {
       "id": "service-other-services",
       "description": "A question mark made of colorful blocks.",
-      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "question mark"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "cqc-promise",
       "description": "A handshake between two professionals, symbolizing a partnership.",
-      "imageUrl": "https://images.unsplash.com/photo-1600880292210-f75bb6a17965?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600880292210-f75bb6a17965?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "partnership trust"
     },
     {
@@ -152,9 +152,9 @@
     },
     {
       "id": "why-choose-us-hero",
-      "description": "A group of happy, diverse seniors enjoying an activity together.",
-      "imageUrl": "https://images.unsplash.com/photo-1531844251246-9a1bfaae09fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGFkdWx0JTIwY2FyZXxlbnwwfHx8fDE3MjE5Mjc0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy adult care"
+      "description": "A happy customer in a care setting",
+      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "happy customer"
     },
     {
       "id": "trainings-hero",
@@ -171,7 +171,7 @@
     {
       "id": "trainings-section-2",
       "description": "A person receiving a certificate of achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1571260899104-6a0fb892b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1571260899104-6a0fb892b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "achievement certificate"
     },
     {
@@ -179,6 +179,12 @@
       "description": "The official logo for The Oliver McGowan Mandatory Training.",
       "imageUrl": "https://i.supaimg.com/f8f9064a-e49e-4a6c-9a4f-557375a004f2.png",
       "imageHint": "official logo"
+    },
+    {
+      "id": "careers-hero",
+      "description": "An image representing career growth and opportunity in the care sector.",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlZXIlMjBncm93dGh8ZW58MHx8fHwxNzYyMTk2NjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "career growth"
     }
   ]
 }
