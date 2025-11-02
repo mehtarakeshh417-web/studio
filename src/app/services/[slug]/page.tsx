@@ -61,7 +61,7 @@ export default function ServicePage({ params }: ServicePageProps) {
     notFound();
   }
 
-  if (service.slug === 'live-in-care' || service.slug === 'medical-services') {
+  if (service.longDescription.trim() === '') {
     const image = PlaceHolderImages.find((p) => p.id === service.imageId);
     return (
       <div>
