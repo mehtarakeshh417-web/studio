@@ -65,7 +65,7 @@ export default function RespiteCarePage() {
       </section>
 
       <div className="bg-background">
-        <div className="container py-16 space-y-24">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 space-y-24">
 
             <section className="prose lg:prose-lg max-w-4xl mx-auto text-center">
                 <p>
