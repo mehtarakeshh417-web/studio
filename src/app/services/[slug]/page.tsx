@@ -7,6 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { permanentRedirect } from 'next/navigation';
+import { Info } from 'lucide-react';
 
 type ServicePageProps = {
   params: {
@@ -48,6 +49,26 @@ export default function ServicePage({ params }: ServicePageProps) {
 
   if (!service) {
     notFound();
+  }
+
+  if (service.slug === 'live-in-care' || service.slug === 'medical-services') {
+    return (
+      <div className="container py-24 text-center">
+        <div className="max-w-md mx-auto bg-card p-8 rounded-lg shadow-sm border">
+          <Info className="h-12 w-12 text-primary mx-auto mb-4" />
+          <h1 className="font-headline text-3xl font-bold">{service.title}</h1>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Information coming soon.
+          </p>
+          <p className="mt-2 text-muted-foreground">
+            Please check back later or contact us for more details.
+          </p>
+          <Button asChild size="lg" className="mt-8">
+            <Link href="/contact">Contact Us</Link>
+          </Button>
+        </div>
+      </div>
+    );
   }
 
   const image = PlaceHolderImages.find((p) => p.id === service.imageId);
