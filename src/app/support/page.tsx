@@ -73,7 +73,7 @@ export default function SupportPage() {
                             >
                                 
                                 <p className="font-bold text-xl text-destructive-foreground">{link.name}</p>
-                                <p className="text-destructive-foreground/80 mt-1">{link.description}</p>
+                                <p className="text-destructive-foreground/90 mt-1">{link.description}</p>
                                 
                             </Link>
                         </li>

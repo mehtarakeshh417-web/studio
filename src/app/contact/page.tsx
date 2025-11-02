@@ -1,7 +1,12 @@
 import { ContactForm } from './ContactForm';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, AlertTriangle } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { supportResources } from '@/lib/data';
+import Link from 'next/link';
 
 export default function ContactPage() {
+  const emergencyContacts = supportResources.find(r => r.category === 'Useful Emergency / Urgent Contacts');
+
   return (
     <div className="bg-background">
       <div className="container py-16">
@@ -52,6 +57,35 @@ export default function ContactPage() {
             <ContactForm />
           </div>
         </div>
+
+        {emergencyContacts && (
+          <div className="mt-20">
+            <Card className="overflow-hidden bg-destructive/10 border-destructive">
+              <CardHeader>
+                  <CardTitle className="flex items-center gap-3 text-2xl font-headline text-destructive">
+                      <AlertTriangle className="h-7 w-7" />
+                      {emergencyContacts.category}
+                  </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                  <ul className="divide-y divide-destructive/20 grid grid-cols-1 md:grid-cols-3">
+                      {emergencyContacts.links.map(link => (
+                          <li key={link.name} className="flex-grow">
+                              <Link 
+                                  href={link.url}
+                                  target={link.url.startsWith('tel:') ? '_blank' : undefined}
+                                  className="block p-6 hover:bg-destructive/20 transition-colors h-full text-center"
+                              >
+                                  <p className="font-bold text-xl text-destructive-foreground">{link.name}</p>
+                                  <p className="text-destructive-foreground/90 mt-1">{link.description}</p>
+                              </Link>
+                          </li>
+                      ))}
+                  </ul>
+              </CardContent>
+            </Card>
+          </div>
+        )}
       </div>
     </div>
   );
