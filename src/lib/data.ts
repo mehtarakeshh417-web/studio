@@ -215,7 +215,7 @@ export const supportResources = [
       { name: 'NHS Health Education England – e-Learning for Health', url: 'https://www.e-lfh.org.uk/', description: 'Free online NHS training' },
       { name: 'Skills for Care', url: 'https://www.skillsforcare.org.uk/', description: 'Workforce development, Care Certificate, LD & Autism frameworks' },
       { name: 'CQC Guidance and Regulations', url: 'https://www.cqc.org.uk/', description: 'Care Quality Commission framework and regulations' },
-      { name: 'Lasting Power of Attorney – Gov.UK', url: 'https://www.gov.uk/power-of-attorney', description: 'Official government information & application' },
+      { name: 'Lasting Power of Attorney – Gov.UK', url: 'https://www.gov.uk/power-of-attorney', description: 'Official government information &amp; application' },
     ]
   },
   {
@@ -235,8 +235,3 @@ export const socialLinks = [
     { name: 'Twitter', href: '#', icon: Twitter },
     { name: 'LinkedIn', href: '#', icon: Linkedin },
 ]
-
-export const footerLogos = [
-    { name: 'Disability Confident Committed Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=Disability+Confident' },
-    { name: 'U Check Logo', href: '#', imageUrl: 'https://placehold.co/128x64/ffffff/000000?text=U+Check' },
-];
