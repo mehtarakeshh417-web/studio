@@ -27,24 +27,29 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
-        <Logo />
-        <div className="flex items-center gap-4">
-          <nav className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'text-lg font-bold transition-colors hover:text-primary',
-                  pathname === link.href ? 'text-primary' : 'text-primary/70'
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
+      <div className="container flex h-20 items-center">
+        <div className="flex-1 flex justify-start">
+          <Logo />
+        </div>
+        
+        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                'text-lg font-bold transition-colors hover:text-primary',
+                pathname === link.href ? 'text-primary' : 'text-primary/70'
+              )}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex-1 flex justify-end items-center gap-4">
           {isClient && <AccessibilityToolbar />}
+          
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="outline" size="icon">
