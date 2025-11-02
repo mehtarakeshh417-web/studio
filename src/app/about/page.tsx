@@ -86,7 +86,7 @@ export default function AboutPage() {
             
             <section className="text-center">
                 <h2 className="font-headline text-3xl font-bold">Our Leadership</h2>
-                <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
                     <Card className="text-left">
                         <CardHeader>
                              {drManpreetImage && (
