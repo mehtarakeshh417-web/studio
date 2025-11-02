@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "Symbolic Care logo",
+      "imageUrl": "https://i.supaimg.com/a64a8a20-b210-4c37-aac1-9492fbfa986e.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "hero-home",
+      "description": "Carer assisting an elderly person at home.",
+      "imageUrl": "https://i.supaimg.com/b3b97c69-eb20-41d0-9946-cbf517e3b6fc.png",
+      "imageHint": "caregiver elderly"
+    },
+    {
+      "id": "service-live-in-care",
+      "description": "A comfortable living room setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc2MTk5NjQxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "living room"
+    },
+    {
+      "id": "service-domiciliary-care",
+      "description": "A friendly carer visiting a home.",
+      "imageUrl": "https://images.unsplash.com/photo-1567249856122-a130195fdd08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxob21lJTIwdmlzaXR8ZW58MHx8fHwxNzYyMDg0OTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "home visit"
+    },
+    {
+      "id": "service-respite-care",
+      "description": "A person relaxing in a peaceful garden.",
+      "imageUrl": "https://images.unsplash.com/photo-1761489356802-afe917fe7ad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZWFjZWZ1bCUyMGdhcmRlbnxlbnwwfHx8fDE3NjIwMTc3MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peaceful garden"
+    },
+    {
+      "id": "service-palliative-care",
+      "description": "Hands holding each other in support.",
+      "imageUrl": "https://images.unsplash.com/photo-1592254765718-02cdd14502fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxob2xkaW5nJTIwaGFuZHN8ZW58MHx8fHwxNzYyMDEyNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "holding hands"
+    },
+    {
+      "id": "service-dementia-care",
+      "description": "A person working on a puzzle.",
+      "imageUrl": "https://images.unsplash.com/photo-1637094408647-0d81d08f81b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwdXp6bGUlMjBnYW1lfGVufDB8fHx8MTc2MjA2MDYwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "puzzle game"
+    },
+    {
+      "id": "service-companionship-care",
+      "description": "Two people having a warm conversation.",
+      "imageUrl": "https://images.unsplash.com/photo-1542338325-1f6bcd66aad2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb252ZXJzYXRpb24lMjB0ZWF8ZW58MHx8fHwxNzYyMDg0OTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conversation tea"
+    },
+    {
+      "id": "service-personal-care",
+      "description": "A neat and tidy bathroom.",
+      "imageUrl": "https://images.unsplash.com/photo-1495468986598-4cd0d30c7805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGVhbiUyMGJhdGhyb29tfGVufDB8fHx8MTc2MjA3NTc4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clean bathroom"
+    },
+    {
+      "id": "service-specialist-care",
+      "description": "Medical equipment in a home setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1551076805-e1869033e561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2MjAzOTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
+    }
+  ]
 }
