@@ -11,7 +11,7 @@ export function ServicesSection() {
             Comprehensive, person-centered care designed to meet your unique needs.
           </p>
         </div>
-        <div className="mt-16 max-w-4xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center max-w-4xl mx-auto">
           {services.map((service) => (
             <HomeServiceCard key={service.slug} service={service} />
           ))}
