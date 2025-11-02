@@ -27,10 +27,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center">
-        <div className="flex items-center gap-6">
+      <div className="container flex h-20 items-center justify-between">
+        <div className="flex items-center gap-8">
           <Logo />
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -46,7 +46,7 @@ export function Header() {
           </nav>
         </div>
 
-        <div className="flex flex-1 items-center justify-end gap-4 md:hidden">
+        <div className="flex items-center justify-end gap-4 md:hidden">
           {isClient && <AccessibilityToolbar />}
           
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -84,7 +84,7 @@ export function Header() {
             </SheetContent>
           </Sheet>
         </div>
-         <div className="hidden md:flex flex-1 items-center justify-end gap-4">
+         <div className="hidden md:flex items-center justify-end gap-4">
             {isClient && <AccessibilityToolbar />}
         </div>
       </div>
