@@ -41,6 +41,7 @@ const nextConfig: NextConfig = {
       '*.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev',
     ],
   },
+  output: 'standalone',
 };
 
 export default nextConfig;
