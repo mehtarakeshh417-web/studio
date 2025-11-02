@@ -28,7 +28,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center justify-between">
-        <div className="flex items-center gap-8">
+        <div className="flex flex-1 items-center gap-8">
           <Logo />
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -79,12 +79,25 @@ export function Header() {
                       {link.name}
                     </Link>
                   ))}
+                   <Link
+                      href="/admin/login"
+                      className={cn(
+                        'text-xl font-bold transition-colors hover:text-primary',
+                        pathname === '/admin/login' ? 'text-primary' : 'text-primary/90'
+                      )}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Admin
+                    </Link>
                 </nav>
               </div>
             </SheetContent>
           </Sheet>
         </div>
          <div className="hidden md:flex items-center justify-end gap-4">
+            <Button asChild variant="outline">
+              <Link href="/admin/login">Admin</Link>
+            </Button>
             {isClient && <AccessibilityToolbar />}
         </div>
       </div>
