@@ -86,8 +86,8 @@ export default function ServicePage({ params }: ServicePageProps) {
             </p>
           </div>
         </section>
-        <div className="container px-4 py-24 text-center">
-          <div className="max-w-md mx-auto bg-card p-8 rounded-lg shadow-sm border">
+        <div className="container py-24">
+          <div className="max-w-md mx-auto bg-card p-8 rounded-lg shadow-sm border text-center">
             <Info className="h-12 w-12 text-primary mx-auto mb-4" />
             <h2 className="font-headline text-3xl font-bold">Information Coming Soon</h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -109,7 +109,7 @@ export default function ServicePage({ params }: ServicePageProps) {
 
   return (
     <div className="bg-background">
-      <div className="container px-4 py-16">
+      <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="font-headline text-4xl font-bold tracking-tight">{service.title}</h1>

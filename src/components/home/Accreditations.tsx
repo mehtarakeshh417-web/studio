@@ -28,7 +28,7 @@ const accreditations = [
 export function Accreditations() {
   return (
     <section className="py-16 bg-secondary">
-      <div className="container text-center">
+      <div className="container text-center animate-fade-in-up animation-delay-500">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-secondary-foreground">Our Accreditations</h2>
         <p className="mt-4 text-lg text-secondary-foreground/80">
           We are proud to be recognized by these leading industry bodies.

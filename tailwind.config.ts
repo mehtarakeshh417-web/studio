@@ -96,14 +96,44 @@ export default {
           '0%': { opacity: '0' },
           '50%, 100%': { opacity: '1' },
         },
+        'fade-in-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-light': 'pulse-light 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'dot-flashing': 'dot-flashing 1.4s infinite linear',
+        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+      },
+      animationDelay: {
+        '100': '100ms',
+        '200': '200ms',
+        '300': '300ms',
+        '400': '400ms',
+        '500': '500ms',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    function ({ addUtilities, theme }: { addUtilities: Function, theme: Function }) {
+      const newUtilities: { [key: string]: any } = {};
+      const animationDelay = theme('animationDelay');
+      Object.entries(animationDelay).forEach(([key, value]) => {
+        newUtilities[`.animation-delay-${key}`] = {
+          'animation-delay': value,
+        };
+      });
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 } satisfies Config;

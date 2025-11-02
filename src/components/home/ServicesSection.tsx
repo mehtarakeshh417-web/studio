@@ -4,7 +4,7 @@ import { HomeServiceCard } from '@/components/home/HomeServiceCard';
 export function ServicesSection() {
   return (
     <section className="py-16 sm:py-24 bg-background">
-      <div className="container">
+      <div className="container animate-fade-in-up animation-delay-300">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Our Core Services</h2>
           <p className="mt-4 text-lg text-muted-foreground">

@@ -19,7 +19,7 @@ export function Hero() {
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 max-w-4xl px-4">
+      <div className="relative z-10 max-w-4xl px-4 animate-fade-in-up">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl font-headline">
           A Reliable and Ethical GP led Care Provider
         </h1>
