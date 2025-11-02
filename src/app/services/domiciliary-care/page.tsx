@@ -84,7 +84,7 @@ export default function DomiciliaryCarePage() {
                         <div className="prose lg:prose-lg max-w-none">
                             <h2 className="font-headline text-3xl font-bold">Our Care</h2>
                             <p>
-                                At Symbolic Care, we are committed to delivering a comprehensive range of personalized Domiciliary Care services that cater to your unique needs and preferences. Whether you require occasional assistance or around-the-clock care, our skilled and compassionate caregivers will work closely with you to ensure that you receive the highest level of care and support.
+                                At Symbolic Care, we are committed to delivering a comprehensive range of personalized Domiciliary Care services that cater to your unique needs and preferences. Whether you require occasional assistance or around-the-clock care, our compassionate caregivers will work closely with you to ensure that you receive the highest level of care and support.
                             </p>
                             <p>
                                 We understand that maintaining your independence and well-being is crucial, and we strive to provide you with the tools and resources necessary to achieve these goals. With a focus on person-centred care, we aim to exceed your expectations and empower you to lead a fulfilling life in the comfort of your own home.
@@ -100,7 +100,7 @@ export default function DomiciliaryCarePage() {
                                     alt="Our Care"
                                     width={600}
                                     height={400}
-                                    className="rounded-lg shadow-lg object-cover w-full h-auto"
+                                    className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[3/2]"
                                     data-ai-hint={section1Image.imageHint}
                                 />
                             )}
@@ -116,7 +116,7 @@ export default function DomiciliaryCarePage() {
                                     alt="Support at home"
                                     width={600}
                                     height={400}
-                                    className="rounded-lg shadow-lg object-cover w-full h-auto"
+                                    className="rounded-lg shadow-lg object-cover w-full h-auto aspect-[3/2]"
                                     data-ai-hint={section2Image.imageHint}
                                 />
                             )}
@@ -182,3 +182,5 @@ export default function DomiciliaryCarePage() {
         </div>
     );
 }
+
+    

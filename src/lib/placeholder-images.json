@@ -45,7 +45,7 @@
     {
       "id": "service-supported-living",
       "description": "A modern and accessible apartment building.",
-      "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzYyMDg3MjcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "modern apartment"
     },
     {
@@ -63,19 +63,19 @@
     {
       "id": "service-other-services",
       "description": "A question mark made of colorful blocks.",
-      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1663465374413-83cba00bff6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzYyMDQzNjAwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "question mark"
     },
     {
       "id": "domiciliary-care-section-1",
-      "description": "Caregiver helping an elderly person.",
-      "imageUrl": "https://images.unsplash.com/photo-1615462696310-09736533dbb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXJlZ2l2ZXIlMjBzdXBwb3J0fGVufDB8fHx8MTc2MjA5MDM0MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "caregiver support"
+      "description": "A carer and senior person chatting in a bright living room.",
+      "imageUrl": "https://images.unsplash.com/photo-1672640770474-e1d8a28fd0d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXJlZ2l2ZXIlMjBjb252ZXJzYXRpb258ZW58MHx8fHwxNzYyMTA0ODg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caregiver conversation"
     },
     {
       "id": "domiciliary-care-section-2",
       "description": "Elderly person smiling in their home.",
-      "imageUrl": "https://images.unsplash.com/photo-1758686253896-e6c76b6f7aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMHNlbmlvcnxlbnwwfHx8fDE3NjIwOTAzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616286608358-0e1b143f7d2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMHNlbmlvcnxlbnwwfHx8fDE3NjIwOTAzMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy senior"
     },
     {
@@ -87,13 +87,13 @@
     {
       "id": "supported-living-intro",
       "description": "A person with a disability working on a laptop in a comfortable living room.",
-      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1671483578124-af3ab6fcfb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1wb3dlcm1lbnQlMjBhY2Nlc3NpYmxlfGVufDB8fHx8MTc2MjA5MDgyM3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "empowerment accessible"
     },
     {
       "id": "supported-living-offer",
       "description": "A group of diverse people chatting and laughing in a shared community space.",
-      "imageUrl": "https://images.unsplash.com/photo-1666285764673-3269d284b1eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21tdW5pdHklMjBjb25uZWN0aW9ufGVufDB8fHx8MTc2MTk5NTU4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666285764673-3269d284b1eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21tdW5pdHklMjBjb25uZWN0aW9ufGVufDB8fHx8MTc2MTk5NTU4OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "community connection"
     },
     {
@@ -105,13 +105,13 @@
     {
       "id": "respite-care-duties",
       "description": "A carer and senior person sharing a moment of companionship.",
-      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW5pb25zaGlwfGVufDB8fHx8MTc2MjEwNjY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW5pb25zaGlwfGVufDB8fHx8MTc2MjEwNjY0Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "companionship support"
     },
     {
       "id": "respite-care-choose",
       "description": "A yellow flower representing warmth and care.",
-      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560790671-b7657f8af133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlJTIwY29tcGFzc2lvbnxlbnwwfHx8fDE3NjIxMDY2NDZ8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "care compassion"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "cqc-promise",
       "description": "A handshake between two professionals, symbolizing a partnership.",
-      "imageUrl": "https://images.unsplash.com/photo-1600880292210-f75bb6a17965?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600880292210-f75bb6a17965?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "partnership trust"
     },
     {
@@ -153,19 +153,19 @@
     {
       "id": "why-choose-us-hero",
       "description": "A happy customer in a care setting",
-      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576766125535-b04e1dfa85a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "happy customer"
     },
     {
       "id": "trainings-hero",
       "description": "A diverse group of professionals in a training session.",
-      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "professional training"
     },
     {
       "id": "trainings-section-1",
       "description": "Caregivers learning together in a bright room.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496773905-f5b17e76b254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573496773905-f5b17e76b254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzVlMTh8MHwxfGFsbHx8fHx8fHx8fDE2ODU1NjU5OTZ8&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "team learning"
     },
     {
