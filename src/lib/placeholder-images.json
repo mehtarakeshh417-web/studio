@@ -9,7 +9,7 @@
     {
       "id": "hero-home",
       "description": "Carer assisting an elderly person at home.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110927/1_qxy4y9.png",
+      "imageUrl": "https://i.supaimg.com/b3b97c69-eb20-41d0-9946-cbf517e3b6fc.png",
       "imageHint": "caregiver elderly"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "service-specialist-care",
       "description": "A healthcare professional checking on an elderly patient with care.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762111662/4_hzygyk.png",
+      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110929/5_kafnh8.png",
       "imageHint": "adult care"
     },
     {
@@ -57,13 +57,13 @@
     {
       "id": "service-medical-services",
       "description": "A nurse checking the blood pressure of a smiling elderly man.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762111663/5_g1sz0u.png",
+      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110929/6_jyml3r.png",
       "imageHint": "adult care"
     },
     {
       "id": "service-other-services",
       "description": "A group of elderly people happily socializing in a care center.",
-      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762111663/6_fsgbxx.png",
+      "imageUrl": "https://res.cloudinary.com/dncupgwgb/image/upload/v1762110930/8_m32e2r.png",
       "imageHint": "adult care"
     },
     {
