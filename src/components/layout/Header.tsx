@@ -27,10 +27,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-20 items-center">
         <Logo />
         
-        <nav className="hidden md:flex flex-1 justify-end items-center space-x-6">
+        <nav className="hidden md:flex flex-1 justify-end items-center space-x-4 whitespace-nowrap">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -90,4 +90,3 @@ export function Header() {
     </header>
   );
 }
-
