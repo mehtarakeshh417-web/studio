@@ -4,6 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { FloatingActionButtons } from '@/components/shared/FloatingActionButtons';
+import { GoogleTranslate } from '@/components/shared/GoogleTranslate';
+import { ZoomButtons } from '@/components/shared/ZoomButtons';
 
 export const metadata: Metadata = {
   title: 'Symbolic Care Hub',
@@ -21,13 +23,16 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <GoogleTranslate />
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <ZoomButtons />
         <FloatingActionButtons />
         <Toaster />
       </body>

@@ -30,7 +30,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'transition-colors hover:text-primary',
+                  'text-lg font-bold transition-colors hover:text-primary',
                   pathname === link.href ? 'text-primary' : 'text-primary/70'
                 )}
               >

@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['PT Sans', 'sans-serif'],
+        body: ['Roboto', 'sans-serif'],
         headline: ['PT Sans', 'sans-serif'],
         code: ['monospace'],
       },
@@ -88,10 +88,20 @@ export default {
             height: '0',
           },
         },
+        'pulse-light': {
+          '0%, 100%': { boxShadow: '0 0 0 0 hsl(var(--primary) / 0.7)' },
+          '50%': { boxShadow: '0 0 0 10px hsl(var(--primary) / 0)' },
+        },
+        'dot-flashing': {
+          '0%': { opacity: '0' },
+          '50%, 100%': { opacity: '1' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'pulse-light': 'pulse-light 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'dot-flashing': 'dot-flashing 1.4s infinite linear',
       },
     },
   },
