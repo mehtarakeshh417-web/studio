@@ -30,7 +30,7 @@ export function Header() {
       <div className="container flex h-20 items-center justify-between">
         <div className="flex items-center gap-4">
           <Logo />
-           <div className="hidden md:block ml-3">
+           <div className="hidden md:block ml-10">
              {isClient && <AccessibilityToolbar />}
            </div>
         </div>
