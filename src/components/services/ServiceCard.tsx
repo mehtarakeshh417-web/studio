@@ -33,13 +33,13 @@ export function ServiceCard({ service }: ServiceCardProps) {
     >
       <Card className="flex flex-col overflow-hidden h-full shadow-md hover:shadow-xl transition-shadow duration-300">
         {image && (
-          <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+          <div className="relative aspect-[3/2] w-full overflow-hidden">
               <Image
                   src={image.imageUrl}
                   alt={title}
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   data-ai-hint={image.imageHint}
               />
           </div>
