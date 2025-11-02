@@ -78,7 +78,7 @@ export default function DomiciliaryCarePage() {
             </section>
 
             <div className="bg-background">
-                <div className="container py-16 space-y-16">
+                <div className="container py-16 space-y-24">
                     {/* Section 1 */}
                     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div className="prose lg:prose-lg max-w-none">
