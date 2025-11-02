@@ -23,6 +23,11 @@ const accreditations = [
     imageUrl: 'https://i.supaimg.com/8782d8dc-4457-498d-b2f3-2e4fac44622b.png',
     href: 'https://skillsprovider.org.uk/',
   },
+  {
+    name: 'Disability Confident Committed',
+    imageUrl: 'https://i.supaimg.com/4e4d880d-0ad5-4a7e-be7e-fdf34814632f.png',
+    href: 'https://www.gov.uk/government/publications/disability-confident-guidance-for-levels-1-2-and-3/level-1-disability-confident-committed',
+  },
 ];
 
 export function Accreditations() {
