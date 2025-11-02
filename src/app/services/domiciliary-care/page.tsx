@@ -84,7 +84,7 @@ export default function DomiciliaryCarePage() {
                         <div className="prose lg:prose-lg max-w-none">
                             <h2 className="font-headline text-3xl font-bold">Our Care</h2>
                             <p>
-                                At Skilled Care, we are committed to delivering a comprehensive range of personalized Domiciliary Care services that cater to your unique needs and preferences. Whether you require occasional assistance or around-the-clock care, our skilled and compassionate caregivers will work closely with you to ensure that you receive the highest level of care and support.
+                                At Symbolic Care, we are committed to delivering a comprehensive range of personalized Domiciliary Care services that cater to your unique needs and preferences. Whether you require occasional assistance or around-the-clock care, our skilled and compassionate caregivers will work closely with you to ensure that you receive the highest level of care and support.
                             </p>
                             <p>
                                 We understand that maintaining your independence and well-being is crucial, and we strive to provide you with the tools and resources necessary to achieve these goals. With a focus on person-centred care, we aim to exceed your expectations and empower you to lead a fulfilling life in the comfort of your own home.
@@ -130,7 +130,7 @@ export default function DomiciliaryCarePage() {
                                 Whether you have difficulty with daily routines such as bathing, dressing, and cooking, or require help with managing your medications and medical appointments, our team of skilled caregivers can provide the necessary support to ensure your comfort and safety.
                             </p>
                              <p>
-                                At Skilled Care, we understand that every home is unique and we work closely with you to identify any potential safety hazards and make the necessary adjustments to ensure that your living space is safe and secure. With our in – Domiciliary Care services, you can continue to enjoy the comforts of home while receiving the compassionate and personalized care that you deserve.
+                                At Symbolic Care, we understand that every home is unique and we work closely with you to identify any potential safety hazards and make the necessary adjustments to ensure that your living space is safe and secure. With our in – Domiciliary Care services, you can continue to enjoy the comforts of home while receiving the compassionate and personalized care that you deserve.
                             </p>
                         </div>
                     </section>
