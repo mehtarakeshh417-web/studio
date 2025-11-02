@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import { Logo } from "@/components/shared/Logo";
@@ -10,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Logo />
-            <p className="mt-4 text-sm">
+            <p className="mt-4 text-sm text-secondary-foreground/80">
               A reliable and ethical GP-led care provider in London.
             </p>
           </div>
@@ -57,13 +58,13 @@ export function Footer() {
             <div className="mt-4 space-y-2 text-sm">
               <p>123 Care Street, London, UK</p>
               <p>Email: contact@symboliccare.co.uk</p>
-              <p>Phone: <span className="font-bold text-primary-foreground">020 1234 5678</span></p>
+              <p>Phone: <span className="font-bold">020 1234 5678</span></p>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm">
+        <div className="mt-8 border-t border-border/20 pt-8 flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-sm text-secondary-foreground/80">
             &copy; {new Date().getFullYear()} Symbolic Care. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 sm:mt-0">

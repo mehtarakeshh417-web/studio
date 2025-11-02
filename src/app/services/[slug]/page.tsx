@@ -111,7 +111,7 @@ export default function ServicePage({ params }: ServicePageProps) {
     <div className="bg-background">
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="prose lg:prose-lg max-w-none">
             <h1 className="font-headline text-4xl font-bold tracking-tight">{service.title}</h1>
             <p className="mt-6 text-lg text-muted-foreground">{service.longDescription}</p>
             <Button asChild size="lg" className="mt-8">

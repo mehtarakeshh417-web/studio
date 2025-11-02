@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -29,7 +30,7 @@ export function Header() {
       <div className="container flex h-20 items-center justify-between">
         <Logo />
         <div className="flex items-center gap-4">
-          <nav className="hidden md:flex items-center space-x-6 text-lg font-bold">
+          <nav className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

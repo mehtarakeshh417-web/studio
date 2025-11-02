@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -18,12 +19,12 @@ export function Hero() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 max-w-4xl px-4 animate-fade-in-up">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl font-headline">
           A Reliable and Ethical GP led Care Provider
         </h1>
-        <p className="mt-6 text-lg md:text-xl">
+        <p className="mt-6 text-lg md:text-xl text-white/90">
           Providing compassionate and professional adult care services in London.
         </p>
         <div className="mt-8 flex justify-center gap-4">

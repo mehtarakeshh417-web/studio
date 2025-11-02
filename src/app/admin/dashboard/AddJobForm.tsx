@@ -132,9 +132,18 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Job Title</FormLabel>
-              <FormControl>
-                <Input placeholder="e.g., Senior Care Assistant" {...field} />
-              </FormControl>
+              <div className="flex gap-2 items-center">
+                <FormControl>
+                  <Input placeholder="e.g., Senior Care Assistant" {...field} />
+                </FormControl>
+                <Button type="button" variant="outline" size="icon" onClick={handleGenerateDescription} disabled={isGenerating} aria-label="Generate with AI">
+                  {isGenerating ? (
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                  ) : (
+                    <Sparkles className="h-4 w-4" />
+                  )}
+                </Button>
+              </div>
               <FormMessage />
             </FormItem>
           )}
@@ -211,16 +220,6 @@ export function AddJobForm({ addJobAction }: AddJobFormProps) {
             </FormItem>
           )}
         />
-        <div className="space-y-1">
-          <Button type="button" variant="outline" size="sm" onClick={handleGenerateDescription} disabled={isGenerating}>
-            {isGenerating ? (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            ) : (
-              <Sparkles className="mr-2 h-4 w-4" />
-            )}
-            Generate with AI
-          </Button>
-        </div>
         <FormField
           control={form.control}
           name="description"

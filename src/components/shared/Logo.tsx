@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -18,10 +19,10 @@ export function Logo() {
       <Image
         src={logoImage.imageUrl}
         alt={logoImage.description}
-        width={480}
-        height={100}
+        width={180}
+        height={38}
         priority
-        className="h-32 w-auto"
+        className="h-auto w-auto"
         data-ai-hint={logoImage.imageHint}
       />
     </Link>
