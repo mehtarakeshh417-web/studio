@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -14,7 +15,7 @@ export default function AdminLoginPage() {
   const router = useRouter();
 
   // It's recommended to use a more secure method for password verification in a real application.
-  const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || '123456';
+  const adminPassword = '123456';
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
