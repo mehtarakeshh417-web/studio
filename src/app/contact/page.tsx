@@ -77,8 +77,8 @@ export default function ContactPage() {
                                   target={link.url.startsWith('tel:') ? '_blank' : undefined}
                                   className="block p-6 hover:bg-primary/20 transition-colors h-full text-center"
                               >
-                                  <p className="font-bold text-xl text-primary">{link.name}</p>
-                                  <p className="text-primary/90 mt-1">{link.description}</p>
+                                  <p className="font-bold text-xl text-blue-900">{link.name}</p>
+                                  <p className="text-blue-900/90 mt-1">{link.description}</p>
                               </Link>
                           </li>
                       ))}
