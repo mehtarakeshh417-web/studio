@@ -39,18 +39,6 @@ export default function TrainingsPage() {
         <div className="container py-16 space-y-24">
 
             <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    {section1Image && (
-                        <Image
-                            src={section1Image.imageUrl}
-                            alt="A group of caregivers in a training session"
-                            width={600}
-                            height={400}
-                            className="rounded-lg shadow-lg object-cover w-full h-auto"
-                            data-ai-hint={section1Image.imageHint}
-                        />
-                    )}
-                </div>
                  <div className="prose lg:prose-lg max-w-none">
                     <h2 className="font-headline text-3xl font-bold">Our Commitment to Excellence</h2>
                     <p className="text-muted-foreground">
@@ -64,6 +52,18 @@ export default function TrainingsPage() {
                         <li>Continuous professional development for frontline and leadership teams</li>
                         <li>Specialist training tailored to diverse care needs and service types</li>
                     </ul>
+                </div>
+                <div>
+                    {section1Image && (
+                        <Image
+                            src={section1Image.imageUrl}
+                            alt="A group of caregivers in a training session"
+                            width={600}
+                            height={400}
+                            className="rounded-lg shadow-lg object-cover w-full h-auto"
+                            data-ai-hint={section1Image.imageHint}
+                        />
+                    )}
                 </div>
             </section>
 
