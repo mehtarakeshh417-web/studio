@@ -1,3 +1,4 @@
+
 import { ContactForm } from './ContactForm';
 import { Mail, Phone, MapPin, AlertTriangle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -60,24 +61,24 @@ export default function ContactPage() {
 
         {emergencyContacts && (
           <div className="mt-20">
-            <Card className="overflow-hidden bg-destructive/10 border-destructive">
+            <Card className="overflow-hidden bg-primary/10 border-primary">
               <CardHeader>
-                  <CardTitle className="flex items-center gap-3 text-2xl font-headline text-destructive">
+                  <CardTitle className="flex items-center gap-3 text-2xl font-headline text-primary">
                       <AlertTriangle className="h-7 w-7" />
                       {emergencyContacts.category}
                   </CardTitle>
               </CardHeader>
               <CardContent className="p-0">
-                  <ul className="divide-y divide-destructive/20 grid grid-cols-1 md:grid-cols-3">
+                  <ul className="divide-y divide-primary/20 grid grid-cols-1 md:grid-cols-3">
                       {emergencyContacts.links.map(link => (
                           <li key={link.name} className="flex-grow">
                               <Link 
                                   href={link.url}
                                   target={link.url.startsWith('tel:') ? '_blank' : undefined}
-                                  className="block p-6 hover:bg-destructive/20 transition-colors h-full text-center"
+                                  className="block p-6 hover:bg-primary/20 transition-colors h-full text-center"
                               >
-                                  <p className="font-bold text-xl text-destructive-foreground">{link.name}</p>
-                                  <p className="text-destructive-foreground/90 mt-1">{link.description}</p>
+                                  <p className="font-bold text-xl text-primary-foreground">{link.name}</p>
+                                  <p className="text-primary-foreground/90 mt-1">{link.description}</p>
                               </Link>
                           </li>
                       ))}
