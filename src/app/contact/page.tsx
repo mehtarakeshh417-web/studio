@@ -1,6 +1,6 @@
 
 import { ContactForm } from './ContactForm';
-import { Mail, Phone, MapPin, AlertTriangle } from 'lucide-react';
+import { Mail, Phone, MapPin, AlertTriangle, Smartphone } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { supportResources } from '@/lib/data';
 import Link from 'next/link';
@@ -31,7 +31,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Our Office</h3>
-                        <p className="text-muted-foreground">123 Care Street, London, UK</p>
+                        <p className="text-muted-foreground">72 Patching Hall Lane, Chelmsford CM1 4DB</p>
                     </div>
                 </div>
                  <div className="flex items-start space-x-4">
@@ -40,7 +40,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Email Us</h3>
-                        <p className="text-muted-foreground">contact@symboliccare.co.uk</p>
+                        <p className="text-muted-foreground">info@symboliccaregroup.org.uk</p>
                     </div>
                 </div>
                  <div className="flex items-start space-x-4">
@@ -48,8 +48,17 @@ export default function ContactPage() {
                         <Phone className="h-6 w-6" />
                     </div>
                     <div>
-                        <h3 className="text-lg font-semibold">Call Us</h3>
-                        <p className="font-bold text-primary">020 1234 5678</p>
+                        <h3 className="text-lg font-semibold">Call Us (Landline)</h3>
+                        <p className="font-bold text-primary">01245922249</p>
+                    </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                    <div className="bg-primary/10 text-primary p-3 rounded-lg flex-shrink-0">
+                        <Smartphone className="h-6 w-6" />
+                    </div>
+                    <div>
+                        <h3 className="text-lg font-semibold">Mobile / WhatsApp</h3>
+                        <p className="font-bold text-primary">+44 7353992009</p>
                     </div>
                 </div>
             </div>

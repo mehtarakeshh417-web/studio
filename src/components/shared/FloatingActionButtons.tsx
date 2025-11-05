@@ -45,7 +45,7 @@ export function FloatingActionButtons() {
             <TooltipTrigger asChild>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                   <Button asChild size="icon" className="rounded-full h-16 w-16 bg-green-500 hover:bg-green-600">
-                      <Link href="https://wa.me/442012345678" target="_blank" aria-label="Chat on WhatsApp">
+                      <Link href="https://wa.me/447353992009" target="_blank" aria-label="Chat on WhatsApp">
                       <MessageCircle className="h-8 w-8" />
                       </Link>
                   </Button>
@@ -59,7 +59,7 @@ export function FloatingActionButtons() {
             <TooltipTrigger asChild>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                   <Button asChild size="icon" className="rounded-full h-16 w-16">
-                      <Link href="tel:02012345678" aria-label="Call Us">
+                      <Link href="tel:01245922249" aria-label="Call Us">
                       <Phone className="h-8 w-8" />
                       </Link>
                   </Button>

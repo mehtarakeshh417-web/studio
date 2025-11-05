@@ -56,9 +56,10 @@ export function Footer() {
           <div className="md:col-span-1">
             <h3 className="font-bold tracking-wider uppercase">Contact Us</h3>
             <div className="mt-4 space-y-2 text-sm">
-              <p>123 Care Street, London, UK</p>
-              <p>Email: contact@symboliccare.co.uk</p>
-              <p>Phone: <span className="font-bold">020 1234 5678</span></p>
+              <p>72 Patching Hall Lane, Chelmsford CM1 4DB</p>
+              <p>Email: info@symboliccaregroup.org.uk</p>
+              <p>Phone: <span className="font-bold">01245922249</span></p>
+              <p>Mobile: <span className="font-bold">+44 7353992009</span></p>
             </div>
           </div>
         </div>
