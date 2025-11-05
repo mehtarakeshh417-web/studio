@@ -5,7 +5,6 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { icons } from "lucide-react";
 import Link from 'next/link';
-import { ArrowRight } from "lucide-react";
 
 export default function SpecialistServicesPage() {
   const service = services.find(s => s.slug === 'specialist-services');
@@ -67,17 +66,11 @@ export default function SpecialistServicesPage() {
                                     )}
                                     <CardTitle className="font-headline text-2xl">{category.category}</CardTitle>
                                 </CardHeader>
-                                <CardContent className="flex-grow text-center">
+                                <CardContent className="flex-grow text-center px-6 pb-6">
                                     <p className="text-muted-foreground">
                                         {category.links[0]?.description || `Find resources and support for ${category.category.toLowerCase()}.`}
                                     </p>
                                 </CardContent>
-                                <div className="p-6 bg-muted/50 mt-auto">
-                                    <div className="flex items-center justify-center text-primary font-semibold">
-                                        Learn More
-                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                                    </div>
-                                </div>
                             </Card>
                         </Link>
                     );
