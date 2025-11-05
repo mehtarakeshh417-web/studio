@@ -54,7 +54,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'relative text-sm font-bold text-primary/80 transition-colors duration-300 hover:text-primary',
+                  'relative text-xs font-bold text-primary/80 transition-colors duration-300 hover:text-primary',
                   'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out',
                   pathname === link.href
                     ? 'text-primary after:w-full after:scale-x-100'
@@ -66,7 +66,7 @@ export function Header() {
             ))}
              <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative text-sm font-bold text-primary/80 transition-colors duration-300 hover:text-primary hover:bg-transparent after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out data-[state=open]:text-primary data-[state=open]:after:scale-x-100 after:w-full after:scale-x-0 hover:after:scale-x-100 px-0 shadow-none hover:shadow-none hover:-translate-y-0">
+                <Button variant="ghost" className="relative text-xs font-bold text-primary/80 transition-colors duration-300 hover:text-primary hover:bg-transparent after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out data-[state=open]:text-primary data-[state=open]:after:scale-x-100 after:w-full after:scale-x-0 hover:after:scale-x-100 px-0 shadow-none hover:shadow-none hover:-translate-y-0">
                   Services
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
