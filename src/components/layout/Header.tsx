@@ -35,12 +35,12 @@ export function Header() {
     setIsClient(true);
   }, []);
 
-  const mainNavLinks = navLinks.filter(link => link.href !== '/services' && link.name !== 'Services');
+  const mainNavLinks = navLinks.filter(link => link.name !== 'Services');
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-24 items-center justify-between pl-6">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <Logo />
            <div className="hidden md:block ml-10">
              {isClient && <AccessibilityToolbar />}
@@ -84,11 +84,11 @@ export function Header() {
             </DropdownMenu>
           </nav>
           
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-4">
               <Button asChild>
                 <Link href="/admin/login">Admin</Link>
               </Button>
-              <div className="flex items-center space-x-3 ml-6">
+              <div className="flex items-center space-x-3 ml-4">
                 <a href="#" className="transition-opacity hover:opacity-80" aria-label="Facebook">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#1877F2"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.35c0 .732.593 1.325 1.325 1.325h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
                 </a>

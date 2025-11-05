@@ -11,11 +11,11 @@ export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
   { name: 'Why Choose Us', href: '/why-choose-us' },
-  { name: 'Services', href: '/services' },
   { name: 'Trainings', href: '/trainings' },
   { name: 'Careers', href: '/careers' },
   { name: 'Support', href: '/support' },
   { name: 'Contact Us', href: '/contact' },
+  { name: 'Services', href: '/services' },
 ];
 
 export type Service = {
