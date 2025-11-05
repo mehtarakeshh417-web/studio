@@ -84,13 +84,13 @@ export default function TrainingsPage() {
                         With our training pathways and strong partner network, we equip our workforce with up-to-date knowledge, confidence and practical skills that meet regulatory standards and enhance the quality of care we provide. When we invest in our people, the individuals we support receive compassionate, high-quality and safe care they can trust.
                     </p>
                      <p className="text-muted-foreground">To support high-quality learning, we proudly work in partnership with:</p>
-                      <div className="flex gap-4">
-                        <Button asChild variant="link" className="p-0">
-                            <Link href="https://www.skillsprovider.co.uk" target="_blank" rel="noopener noreferrer">Skills Provider Limited</Link>
-                        </Button>
-                        <Button asChild variant="link" className="p-0">
-                            <Link href="https://www.flourishlearning.co.uk" target="_blank" rel="noopener noreferrer">Flourish Learning</Link>
-                        </Button>
+                      <div className="flex items-center gap-8 mt-4">
+                        <Link href="https://www.skillsprovider.co.uk" target="_blank" rel="noopener noreferrer" className="relative w-40 h-16">
+                            <Image src="https://i.supaimg.com/8782d8dc-4457-498d-b2f3-2e4fac44622b.png" alt="Skills Provider Limited Logo" layout="fill" objectFit="contain" />
+                        </Link>
+                        <Link href="https://www.flourishlearning.co.uk" target="_blank" rel="noopener noreferrer" className="relative w-40 h-16">
+                           <Image src="https://res.cloudinary.com/dncupgwgb/image/upload/v1762366462/download_jk7oxz.jpg" alt="Flourish Learning Logo" layout="fill" objectFit="contain" />
+                        </Link>
                      </div>
                 </div>
                  <div>
