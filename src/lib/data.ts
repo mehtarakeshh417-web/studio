@@ -1,7 +1,7 @@
 import type { LucideIcon, LucideProps } from 'lucide-react';
 import {
   Facebook,
-  Twitter,
+  Instagram,
   Linkedin,
 } from 'lucide-react';
 import { icons } from 'lucide-react';
@@ -232,6 +232,6 @@ export const supportResources = [
 
 export const socialLinks = [
     { name: 'Facebook', href: '#', icon: Facebook },
-    { name: 'Twitter', href: '#', icon: Twitter },
+    { name: 'Instagram', href: '#', icon: Instagram },
     { name: 'LinkedIn', href: '#', icon: Linkedin },
 ]
