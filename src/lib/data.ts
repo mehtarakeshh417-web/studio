@@ -1,3 +1,4 @@
+
 import type { LucideIcon, LucideProps } from 'lucide-react';
 import {
   Facebook,
@@ -231,7 +232,7 @@ export const supportResources = [
 
 
 export const socialLinks = [
-    { name: 'Facebook', href: '#', icon: Facebook },
-    { name: 'Instagram', href: '#', icon: Instagram },
-    { name: 'LinkedIn', href: '#', icon: Linkedin },
+    { name: 'Facebook', href: '#'},
+    { name: 'Instagram', href: '#'},
+    { name: 'LinkedIn', href: '#'},
 ]
