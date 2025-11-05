@@ -19,13 +19,6 @@ import {
 } from "@/components/ui/sheet";
 import { AccessibilityToolbar } from '@/components/shared/AccessibilityToolbar';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
 
 export function Header() {
   const pathname = usePathname();
@@ -38,21 +31,18 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-24 items-center px-4 md:px-8">
-        <div className="flex items-center gap-6">
+      <div className="container flex h-24 items-center px-8">
+        <div className="flex items-center gap-6 mr-auto">
             <Logo />
-            <div className="hidden md:block">
-            {isClient && <AccessibilityToolbar />}
-            </div>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-4 mx-auto">
+        <nav className="hidden md:flex items-center space-x-6 mx-auto">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'relative text-sm font-bold text-primary/80 transition-colors duration-300 hover:text-primary whitespace-nowrap',
+                'relative text-base font-bold text-primary/80 transition-colors duration-300 hover:text-primary whitespace-nowrap',
                 'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out',
                 pathname === link.href
                   ? 'text-primary after:w-full after:scale-x-100'
@@ -64,7 +54,10 @@ export function Header() {
           ))}
         </nav>
         
-        <div className="flex items-center justify-end ml-auto">
+        <div className="flex items-center justify-end ml-auto gap-4">
+            <div className="hidden md:block">
+              {isClient && <AccessibilityToolbar />}
+            </div>
           <div className="hidden md:flex">
             <Button asChild>
               <Link href="/admin/login">Admin</Link>
