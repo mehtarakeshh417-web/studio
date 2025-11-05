@@ -39,7 +39,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-24 items-center justify-between pl-6">
+      <div className="container flex h-24 items-center">
         <div className="flex items-center gap-6">
           <Logo />
            <div className="hidden md:block ml-10">
@@ -47,8 +47,8 @@ export function Header() {
            </div>
         </div>
         
-        <div className="flex items-center justify-end gap-6">
-          <nav className="hidden md:flex items-center space-x-6 ml-6">
+        <div className="flex flex-1 items-center justify-end gap-6">
+          <nav className="hidden md:flex items-center space-x-6">
             {mainNavLinks.map((link) => (
               <Link
                 key={link.href}
@@ -100,8 +100,9 @@ export function Header() {
                 </a>
               </div>
           </div>
+        </div>
 
-          <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-4 md:hidden">
             {isClient && <AccessibilityToolbar />}
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -155,10 +156,7 @@ export function Header() {
               </SheetContent>
             </Sheet>
           </div>
-        </div>
       </div>
     </header>
   );
 }
-
-    
