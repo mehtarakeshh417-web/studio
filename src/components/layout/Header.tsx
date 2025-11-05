@@ -23,10 +23,10 @@ import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 export function Header() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    setIsMounted(true);
   }, []);
 
   return (
@@ -56,7 +56,7 @@ export function Header() {
         
         <div className="flex items-center justify-end ml-auto gap-4">
             <div className="hidden md:block">
-              {isClient && <AccessibilityToolbar />}
+              {isMounted && <AccessibilityToolbar />}
             </div>
           <div className="hidden md:flex">
             <Button asChild>
