@@ -25,7 +25,7 @@ export function Hero() {
           A Reliable and Ethical GP led Care Provider
         </h1>
         <p className="mt-6 text-lg md:text-xl text-white/90">
-          Providing compassionate and professional adult care services in London.
+          Providing compassionate and professional adult care services in Essex.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button asChild size="lg">
