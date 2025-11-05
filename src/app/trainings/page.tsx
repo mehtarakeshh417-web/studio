@@ -85,11 +85,11 @@ export default function TrainingsPage() {
                     </p>
                      <p className="text-muted-foreground">To support high-quality learning, we proudly work in partnership with:</p>
                       <div className="flex items-center gap-8 mt-4">
-                        <Link href="https://www.skillsprovider.co.uk" target="_blank" rel="noopener noreferrer" className="relative w-40 h-16">
-                            <Image src="https://i.supaimg.com/8782d8dc-4457-498d-b2f3-2e4fac44622b.png" alt="Skills Provider Limited Logo" layout="fill" objectFit="contain" />
+                        <Link href="https://skillsprovider.org.uk/" target="_blank" rel="noopener noreferrer" className="relative w-40 h-16">
+                            <Image src="https://i.supaimg.com/8782d8dc-4457-498d-b2f3-2e4fac44622b.png" alt="Skills Provider Limited Logo" fill objectFit="contain" />
                         </Link>
-                        <Link href="https://www.flourishlearning.co.uk" target="_blank" rel="noopener noreferrer" className="relative w-40 h-16">
-                           <Image src="https://res.cloudinary.com/dncupgwgb/image/upload/v1762366462/download_jk7oxz.jpg" alt="Flourish Learning Logo" layout="fill" objectFit="contain" />
+                        <Link href="https://flourish.co.uk/click-learning/" target="_blank" rel="noopener noreferrer" className="relative w-40 h-16">
+                           <Image src="https://res.cloudinary.com/dncupgwgb/image/upload/v1762366462/download_jk7oxz.jpg" alt="Flourish Learning Logo" fill objectFit="contain" />
                         </Link>
                      </div>
                 </div>
