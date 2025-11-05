@@ -4,9 +4,9 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/shared/Logo';
-import { navLinks, services } from '@/lib/data';
+import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
@@ -17,12 +17,6 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { AccessibilityToolbar } from '@/components/shared/AccessibilityToolbar';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
@@ -35,11 +29,9 @@ export function Header() {
     setIsClient(true);
   }, []);
 
-  const mainNavLinks = navLinks.filter(link => link.name !== 'Services');
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-24 items-center pl-4">
+      <div className="container flex h-24 items-center pl-8">
         <div className="flex flex-1 items-center justify-start">
            <div className="flex items-center gap-6">
               <Logo />
@@ -49,13 +41,13 @@ export function Header() {
            </div>
         </div>
         
-        <nav className="hidden md:flex items-center space-x-6">
-          {mainNavLinks.map((link) => (
+        <nav className="hidden md:flex items-center space-x-6 ml-16">
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'relative text-xs font-bold text-primary/80 transition-colors duration-300 hover:text-primary',
+                'relative text-sm font-bold text-primary/80 transition-colors duration-300 hover:text-primary',
                 'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out',
                 pathname === link.href
                   ? 'text-primary after:w-full after:scale-x-100'
@@ -65,24 +57,6 @@ export function Header() {
               {link.name}
             </Link>
           ))}
-           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="relative text-xs font-bold text-primary/80 transition-colors duration-300 hover:text-primary hover:bg-transparent after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out data-[state=open]:text-primary data-[state=open]:after:scale-x-100 after:w-full after:scale-x-0 hover:after:scale-x-100 px-0 shadow-none hover:shadow-none hover:-translate-y-0">
-                Services
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
-              <DropdownMenuItem asChild>
-                <Link href="/services">All Services</Link>
-              </DropdownMenuItem>
-              {services.map((service) => (
-                <DropdownMenuItem key={service.slug} asChild>
-                  <Link href={`/services/${service.slug}`}>{service.title}</Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
         </nav>
         
         <div className="flex flex-1 items-center justify-end gap-6">
