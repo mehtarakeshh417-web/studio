@@ -31,7 +31,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between pl-6">
+      <div className="container flex h-24 items-center justify-between pl-6">
         <div className="flex items-center gap-4">
           <Logo />
            <div className="hidden md:block ml-10">
@@ -46,8 +46,11 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'text-lg font-bold transition-colors hover:text-primary whitespace-nowrap',
-                  pathname === link.href ? 'text-primary' : 'text-primary/70'
+                  'relative text-lg font-bold text-primary/80 transition-colors duration-300 hover:text-primary',
+                  'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-primary after:transition-transform after:duration-300 after:ease-in-out',
+                  pathname === link.href
+                    ? 'text-primary after:w-full after:scale-x-100'
+                    : 'after:w-full after:scale-x-0 hover:after:scale-x-100'
                 )}
               >
                 {link.name}
