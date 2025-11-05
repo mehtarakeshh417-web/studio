@@ -153,7 +153,7 @@ export const supportResources = [
     category: 'Dementia Care',
     icon: 'Brain',
     links: [
-      { name: 'Alzheimer’s Society', url: 'https://www.alzheimers.org.uk/', description: 'Support, advice, and local services' },
+      { name: 'Alzheimer’s Society', url: 'https://www.alzheimers.org.uk/', description: 'Find support, advice, and local services for dementia.' },
       { name: 'Age UK – Dementia Support', url: 'https://www.ageuk.org.uk/information-advice/health-wellbeing/conditions-illnesses/dementia/', description: 'Information and practical help for families' },
       { name: 'NHS Dementia Care Guide', url: 'https://www.nhs.uk/conditions/dementia/care-and-support/', description: 'Symptoms, diagnosis, and treatment' },
     ]
@@ -162,7 +162,7 @@ export const supportResources = [
     category: 'Learning Disability & Autism',
     icon: 'Users',
     links: [
-      { name: 'Mencap', url: 'https://www.mencap.org.uk/', description: 'Support, advocacy, and learning resources' },
+      { name: 'Mencap', url: 'https://www.mencap.org.uk/', description: 'Access support, advocacy, and learning resources.' },
       { name: 'National Autistic Society', url: 'https://www.autism.org.uk/', description: 'Autism learning resources and services' },
       { name: 'British Institute of Learning Disabilities (BILD)', url: 'https://www.bild.org.uk/', description: 'Positive Behaviour Support and training' },
       { name: 'Foundation for People with Learning Disabilities', url: 'https://www.learningdisabilities.org.uk/', description: 'Research and good practice' },
@@ -174,7 +174,7 @@ export const supportResources = [
     category: 'End of Life Care',
     icon: 'HeartHandshake',
     links: [
-      { name: 'Marie Curie', url: 'https://www.mariecurie.org.uk/', description: 'End of life nursing and support' },
+      { name: 'Marie Curie', url: 'https://www.mariecurie.org.uk/', description: 'Find information on end of life nursing and support.' },
       { name: 'Hospice UK', url: 'https://www.hospiceuk.org/', description: 'Hospice care and guidance' },
       { name: 'NHS End of Life Care', url: 'https://www.nhs.uk/conditions/end-of-life-care/', description: 'NHS guide to services and planning' },
     ]
@@ -183,7 +183,7 @@ export const supportResources = [
     category: 'Sensory Disabilities',
     icon: 'Eye',
     links: [
-      { name: 'Royal National Institute of Blind People (RNIB)', url: 'https://www.rnib.org.uk/', description: 'Support for visual impairment' },
+      { name: 'Royal National Institute of Blind People (RNIB)', url: 'https://www.rnib.org.uk/', description: 'Find support for visual impairment and sight loss.' },
       { name: 'Royal National Institute for Deaf People (RNID)', url: 'https://rnid.org.uk/', description: 'Support for hearing loss and deafness' },
       { name: 'Sense', url: 'https://www.sense.org.uk/', description: 'Support for people with complex disabilities and sensory loss' },
     ]
@@ -192,7 +192,7 @@ export const supportResources = [
     category: 'Mental Health',
     icon: 'Smile',
     links: [
-      { name: 'NHS Every Mind Matters', url: 'https://www.nhs.uk/every-mind-matters/', description: 'NHS self-help tools and guidance' },
+      { name: 'NHS Every Mind Matters', url: 'https://www.nhs.uk/every-mind-matters/', description: 'Explore NHS self-help tools and guidance.' },
       { name: 'Mind', url: 'https://www.mind.org.uk/', description: 'Mental health support and helplines' },
       { name: 'Rethink Mental Illness', url: 'https://www.rethink.org/', description: 'Advocacy, support, and advice' },
       { name: 'Samaritans', url: 'https://www.samaritans.org/', description: '24/7 emotional support helpline' },
@@ -204,9 +204,18 @@ export const supportResources = [
     category: 'Physical Disability',
     icon: 'Accessibility',
     links: [
-      { name: 'Scope', url: 'https://www.scope.org.uk/', description: 'Support for people with disabilities' },
+      { name: 'Scope', url: 'https://www.scope.org.uk/', description: 'Access support and resources for people with disabilities.' },
       { name: 'Leonard Cheshire', url: 'https://www.leonardcheshire.org/', description: 'Disability support and care services' },
       { name: 'Disability Rights UK', url: 'https://www.disabilityrightsuk.org/', description: 'Advice and advocacy' },
+    ]
+  },
+  {
+    category: 'Complex Care',
+    icon: 'Puzzle',
+    links: [
+      { name: 'Continuing Healthcare', url: 'https://www.nhs.uk/conditions/social-care-and-support-guide/money-work-and-benefits/nhs-continuing-healthcare/', description: 'Learn about NHS funding for complex, long-term health needs.' },
+      { name: 'Beacon CHC', url: 'https://www.beaconchc.co.uk/', description: 'Free independent advice on NHS Continuing Healthcare.' },
+      { name: 'Spinal Injuries Association', url: 'https://www.spinal.co.uk/', description: 'Support for individuals with spinal cord injuries.' },
     ]
   },
   {

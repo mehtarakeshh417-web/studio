@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { icons } from "lucide-react";
 import Link from 'next/link';
-import { ExternalLink } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function SpecialistServicesPage() {
   const service = services.find(s => s.slug === 'specialist-services');
@@ -13,7 +13,7 @@ export default function SpecialistServicesPage() {
 
   const specialistCategories = supportResources.filter(
     (category) =>
-      category.category !== 'Government and Training Guidance' &&
+      category.category !== 'Government & Training Guidance' &&
       category.category !== 'Useful Emergency / Urgent Contacts'
   );
 
@@ -44,48 +44,43 @@ export default function SpecialistServicesPage() {
         </section>
 
         <div className="container py-16">
-            <div className="prose lg:prose-xl max-w-4xl mx-auto text-center">
-                <h2 className="font-headline text-3xl font-bold">Support Links & Resources</h2>
-                <p className="lead">
-                Find trusted information, advice, and support from leading UK-based organizations dedicated to various specialist care areas.
+            <div className="max-w-4xl mx-auto text-center">
+                <h2 className="font-headline text-3xl font-bold">Our Specialist Care Areas</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                We provide expert, compassionate support across a wide range of specialist needs. Explore our care areas below to find trusted information and resources.
                 </p>
             </div>
 
-            <div className="mt-16 space-y-12">
+            <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {specialistCategories.map((category) => {
                     const LucideIcon = category.icon ? icons[category.icon as keyof typeof icons] : null;
+                    const slug = category.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+                    
                     return (
-                        <Card key={category.category} className="overflow-hidden">
-                            <CardHeader className="bg-muted">
-                                <CardTitle className="flex items-center gap-3 text-2xl font-headline">
-                                    {LucideIcon && <LucideIcon className="h-7 w-7 text-primary" />}
-                                    {category.category}
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent className="p-0">
-                            <ul className="divide-y">
-                                {category.links.map(link => (
-                                    <li key={link.name}>
-                                        <Link 
-                                            href={link.url}
-                                            target={link.url.startsWith('http') ? '_blank' : undefined}
-                                            rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
-                                            className="block p-6 hover:bg-primary/5 transition-colors"
-                                        >
-                                            <div className="flex items-center justify-between">
-                                                <div>
-                                                    <p className="font-bold text-lg text-primary">{link.name}</p>
-                                                    <p className="text-muted-foreground mt-1">{link.description}</p>
-                                                </div>
-                                                {link.url.startsWith('http') && <ExternalLink className="h-5 w-5 text-muted-foreground ml-4 flex-shrink-0" />}
-                                            </div>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                            </CardContent>
-                        </Card>
-                    )
+                        <Link key={category.category} href={`/services/specialist/${slug}`} className="group">
+                           <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 border-2 border-transparent hover:border-primary hover:shadow-2xl">
+                                <CardHeader className="flex flex-col items-center text-center p-6">
+                                    {LucideIcon && (
+                                    <div className="bg-primary/10 text-primary p-4 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">
+                                        <LucideIcon className="h-10 w-10" />
+                                    </div>
+                                    )}
+                                    <CardTitle className="font-headline text-2xl">{category.category}</CardTitle>
+                                </CardHeader>
+                                <CardContent className="flex-grow text-center">
+                                    <p className="text-muted-foreground">
+                                        {category.links[0]?.description || `Find resources and support for ${category.category.toLowerCase()}.`}
+                                    </p>
+                                </CardContent>
+                                <div className="p-6 bg-muted/50 mt-auto">
+                                    <div className="flex items-center justify-center text-primary font-semibold">
+                                        Learn More
+                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                                    </div>
+                                </div>
+                            </Card>
+                        </Link>
+                    );
                 })}
             </div>
         </div>
